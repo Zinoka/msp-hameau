@@ -46,28 +46,40 @@
         <div class="line"></div>
         <div class="practitioners-panel">
             <h1>Les Praticiens</h1>
-            <button class="practitioner-button">Médecins Généralistes</button>
-            <button class="practitioner-button">Pharmaciens</button>
-            <button class="practitioner-button">Orthophonistes</button>
-            <button class="practitioner-button">Kinésithérapeutes</button>
-            <button class="practitioner-button">Infirmiers Libéraux et Asalée</button>
+            <div class="practitioners-buttons-panel">
+                <button class="practitioner-button">Médecins Généralistes</button>
+                <button style="margin-left: 2vw; margin-right: 2vw;" class="practitioner-button">Pharmaciens</button>
+                <button class="practitioner-button">Orthophonistes</button>
+                <button style="margin-left: 2vw; margin-right: 2vw;" class="practitioner-button">Kinésithérapeutes</button>
+                <button class="practitioner-button">Infirmiers Libéraux et Asalée</button>
+            </div>
         </div>
         <div class="news-panel">
             <h1>Les Nouvelles Actualités</h1>
-            <div class="news-card">
-                <img src="images/logo.png" alt="news1">
-                <div class="news-text">
-                    <h2>Titre de la publication</h2>
-                    <span>Publié le 26 octobre 2024</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+            <div class="news-cards-panel">
+                <div class="news-card">
+                    <img src="images/logo.png" alt="news1">
+                    <div class="news-text">
+                        <h2>Titre de la publication</h2>
+                        <span>Publié le 26 octobre 2024</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="news-card">
-                <img src="images/logo.png" alt="news1">
-                <div class="news-text">
-                    <h2>Titre de la publication</h2>
-                    <span>Publié le 26 octobre 2024</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                <div class="news-card">
+                    <img src="images/logo.png" alt="news1">
+                    <div class="news-text">
+                        <h2>Titre de la publication</h2>
+                        <span>Publié le 26 octobre 2024</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/logo.png" alt="news1">
+                    <div class="news-text">
+                        <h2>Titre de la publication</h2>
+                        <span>Publié le 26 octobre 2024</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                    </div>
                 </div>
             </div>
         </div>

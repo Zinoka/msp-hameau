@@ -71,7 +71,7 @@ body {
   position: relative;
   height: 3px;
   background-color: #325592;
-  top: 12vh;
+  top: 15vh;
 }
 
 .welcome-panel {
@@ -116,6 +116,13 @@ body {
   align-items: center;
   color: #325592;
   height: 60vh;
+}
+
+.practitioners-buttons-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .practitioners-panel h1 {
@@ -249,6 +256,74 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-buttons {
+    visibility: visible;
+  }
+
+  .navbar-button {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+
+  .logo {
+    width: 55%;
+    height: 55%;
+  }
+
+  .news-card {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slogan-container {
+    flex-direction: row;
+  }
+
+  .logo {
+    width: 35%;
+    height: 35%;
+    margin-left: 10vw;
+  }
+
+  .slogan {
+    text-align: end;
+    width: 40vw;
+    font-size: 1.2rem;
+  }
+
+  .practitioners-buttons-panel {
+    display: block;
+    text-align: center;
+  }
+
+  .practitioner-button {
+    margin-top: 6vh;
+  }
+
+  .welcome-panel {
+    left: 10vw;
+    width: 60vw;
+  }
+
+  .news-panel h1 {
+    margin: 8vh 0;
+  }
+
+  .news-cards-panel {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .news-card {
+    margin: 0 15px 15px 15px;
+    margin-left: 15px;
+    transform: translateX(0);
   }
 }
 
