@@ -1,0 +1,89 @@
+<html lang="fr">
+    <head>
+        <style>html{visibility: hidden;opacity:0;}</style>
+        <title>Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title">Maison de Santé Pluriprofessionnelle</div>
+            <div class="right-buttons">
+                <button class="navbar-button">Accueil</button>
+                <button class="navbar-button">Les Praticiens</button>
+                <button class="navbar-button">Contact</button>
+                <button class="navbar-button">Horaires</button>
+                <button class="navbar-button">Rendez-vous</button>
+            </div>
+        </div>
+        <div class="slogan-container">
+            <img class="logo" src="images/logo.png" alt="logo de la maison de santé pluriprofessionnelle du Hameau">
+            <div class="slogan">La Maison de Santé, une autre façon de travailler ensemble !</div>
+        </div>
+        <div class="welcome-panel">
+            <h1>Bienvenue !</h1>
+            <div class="welcome-text">
+                <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu''elle est divisé en <strong>8 lieux</strong> sur le quartier du Hameau (Ousse des Bois et Berlioz)</p>
+                <p style="margin-top: 30px;">Nous sommes une équipe d'une <strong>vingtaine</strong> de professionnels</p>
+                <ul style="margin-top: 30px; margin-left: 20px;">
+                    <li>Médecins généralistes</li>
+                    <li>Pharmaciens</li>
+                    <li>Orthophonistes</li>
+                    <li>Kinésithérapeutes</li>
+                    <li>Infirmiers libéraux</li>
+                    <li>Infirmiers Asalée</li>
+            </div>
+            <div class="welcome-image">
+                <img src="images/doctors.png" alt="docteurs msp hameau">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="practitioners-panel">
+            <h1>Les Praticiens</h1>
+            <button class="practitioner-button">Médecins Généralistes</button>
+            <button class="practitioner-button">Pharmaciens</button>
+            <button class="practitioner-button">Orthophonistes</button>
+            <button class="practitioner-button">Kinésithérapeutes</button>
+            <button class="practitioner-button">Infirmiers Libéraux et Asalée</button>
+        </div>
+        <div class="news-panel">
+            <h1>Les Nouvelles Actualités</h1>
+            <div class="news-card">
+                <img src="images/logo.png" alt="news1">
+                <div class="news-text">
+                    <h2>Titre de la publication</h2>
+                    <span>Publié le 26 octobre 2024</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/logo.png" alt="news1">
+                <div class="news-text">
+                    <h2>Titre de la publication</h2>
+                    <span>Publié le 26 octobre 2024</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 10px;">
+            <button class="footer-button">Accueil</button>
+            <button class="footer-button">Les Praticiens</button>
+            <button class="footer-button">Contact</button>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <button class="footer-button">Mentions Légales</button>
+            <button class="footer-button">Horaires</button>
+            <button class="footer-button">Rendez-vous</button>
+        </div>
+        <div class="footer-text">
+            <p style="margin-top: 3%; margin-bottom: 5%;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+            <p style="margin-bottom: 3%;">Créé par Zino-Tech</p>
+        </div>
+    </body>
+</html>
