@@ -56,7 +56,7 @@
         </div>
         <div class="news-panel">
             <h1>Les Nouvelles Actualités</h1>
-            <div class="news-cards-panel">
+            <div class="news-cards-panel" style="margin-bottom: 20px;">
                 <div class="news-card">
                     <img src="images/logo.png" alt="news1">
                     <div class="news-text">
@@ -83,19 +83,17 @@
                 </div>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 10px;">
+        <div class="footer-buttons">
             <button class="footer-button">Accueil</button>
             <button class="footer-button">Les Praticiens</button>
             <button class="footer-button">Contact</button>
-        </div>
-        <div style="display: flex; flex-direction: row; justify-content: center;">
             <button class="footer-button">Mentions Légales</button>
             <button class="footer-button">Horaires</button>
             <button class="footer-button">Rendez-vous</button>
         </div>
         <div class="footer-text">
-            <p style="margin-top: 3%; margin-bottom: 5%;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
-            <p style="margin-bottom: 3%;">Créé par Zino-Tech</p>
+            <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+            <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
         </div>
     </body>
 </html>
