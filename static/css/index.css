@@ -336,6 +336,17 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .logo {
+    width: 25%;
+    height: 25%;
+  }
+
+  .new-card {
+    width: 50%;
+  }
+}
+
 html {
   visibility: visible;
   opacity: 1;
