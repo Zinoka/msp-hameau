@@ -29,8 +29,8 @@
         <div class="welcome-panel">
             <h1>Bienvenue !</h1>
             <div class="welcome-text">
-                <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu''elle est divisé en <strong>8 lieux</strong> sur le quartier du Hameau (Ousse des Bois et Berlioz)</p>
-                <p style="margin-top: 30px;">Nous sommes une équipe d'une <strong>vingtaine</strong> de professionnels</p>
+                <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu'elle est divisée en <strong>7 lieux</strong> sur le quartier du Hameau (Ousse des Bois et Berlioz)</p>
+                <p style="margin-top: 30px;">Nous sommes une équipe de <strong>19</strong> professionnels</p>
                 <ul style="margin-top: 30px; margin-left: 20px;">
                     <li>Médecins généralistes</li>
                     <li>Pharmaciens</li>
@@ -51,7 +51,8 @@
                 <button style="margin-left: 2vw; margin-right: 2vw;" class="practitioner-button">Pharmaciens</button>
                 <button class="practitioner-button">Orthophonistes</button>
                 <button style="margin-left: 2vw; margin-right: 2vw;" class="practitioner-button">Kinésithérapeutes</button>
-                <button class="practitioner-button">Infirmiers Libéraux et Asalée</button>
+                <button class="practitioner-button">Infirmière Asalée</button>
+                <button style="margin-left: 2vw; margin-right: 2vw;" class="practitioner-button">Infirmiers Libéraux</button>
             </div>
         </div>
         <div class="news-panel">
