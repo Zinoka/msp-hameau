@@ -59,7 +59,7 @@
                     <span style="position: relative;">Médecins Généralistes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" style="margin-left: 2vw; margin-right: 2vw;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
                     <span style="position: relative;">Pharmaciens</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
@@ -67,7 +67,7 @@
                     <span style="position: relative;">Orthophonistes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" style="margin-left: 2vw; margin-right: 2vw;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
                     <span style="position: relative;">Kinésithérapeutes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
@@ -75,7 +75,7 @@
                     <span style="position: relative;">Infirmière Asalée</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" style="margin-left: 2vw; margin-right: 2vw;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
                     <span style="position: relative;">Infirmiers Libéraux</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
