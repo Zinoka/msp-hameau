@@ -126,6 +126,15 @@ body {
   align-items: center;
 }
 
+.arrow-right {
+  position: absolute;
+  margin-top: 0.7%;
+  width: 4.5vw;
+  height: 4.5vw;
+  background-color: #325592;
+  visibility: hidden;
+}
+
 .practitioner-button {
   margin-top: 3vh;
   font-size: 1rem;
@@ -136,11 +145,28 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
 }
 
 .practitioner-button:hover {
   background-color: #325592;
   color: white;
+}
+
+.practitioner-button:focus .arrow-right {
+  position: relative;
+  visibility: visible;
+  animation: arrowRightAnimation 0.3s 0.1s ease-in-out forwards;
+}
+
+.practitioner-button:focus {
+  background-color: #325592;
+  animation: extandButton 0.2s ease-in-out forwards;
+}
+
+.practitioner-button:focus span {
+  animation: practitionerButtonAnimationClick 0.2s ease-in-out forwards;
 }
 
 .news-panel {
@@ -153,8 +179,7 @@ body {
 
 .news-panel h1 {
   text-align: center;
-  margin-top: 6vh;
-  margin-bottom: 5vh;
+  margin: 6vh 3vw 5vh 3vw;
   color: #325592;
 }
 
@@ -260,6 +285,35 @@ body {
   }
 }
 
+@keyframes extandButton {
+  0% {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  100% {
+    padding-left: 9vw;
+    padding-right: 5vw;
+  }
+}
+
+@keyframes practitionerButtonAnimationClick {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+@keyframes arrowRightAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 2vw;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-button {
     font-size: 0.8rem;
@@ -309,10 +363,6 @@ body {
   .practitioners-buttons-panel {
     display: block;
     text-align: center;
-  }
-
-  .practitioner-button {
-    margin-top: 6vh;
   }
 
   .welcome-panel {
