@@ -1,4 +1,12 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
+
+    function goTo(url: string) {
+        setTimeout(() => {
+            goto(url);
+        }, 400);
+    }
+
     function openExternalLink(url: string) {
         setTimeout(() => {
             window.open(url, '_blank');
@@ -55,27 +63,27 @@
         <div class="practitioners-panel">
             <h1>Les Praticiens</h1>
             <div class="practitioners-buttons-panel">
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/medecins-generalistes")}>
                     <span style="position: relative;">Médecins Généralistes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/pharmaciens")}>
                     <span style="position: relative;">Pharmaciens</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/orthophonistes")}>
                     <span style="position: relative;">Orthophonistes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/kinesitherapeutes")}>
                     <span style="position: relative;">Kinésithérapeutes</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/infirmiere-asalee")}>
                     <span style="position: relative;">Infirmière Asalée</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
-                <button class="practitioner-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>
+                <button class="practitioner-button" on:click={() => goTo("/infirmier-liberaux")}>
                     <span style="position: relative;">Infirmiers Libéraux</span>
                     <img class="arrow-right" src="images/right-arrow.svg" alt="right arrow">
                 </button>
