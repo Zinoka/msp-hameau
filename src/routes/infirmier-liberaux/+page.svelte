@@ -37,7 +37,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Cabinet infirmier</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Gaelle Langlet</li>
                         <li>Michelle Hodée Sylvie Stagnitto</li>
@@ -57,7 +57,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white; font-size: 24px;">Cabinet infirmier</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lionel Barral</li>
                         <li>Julie Guiard</li>

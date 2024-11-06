@@ -34,7 +34,7 @@
             <h1 style="color: #325592;">Médecins Généralistes</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Fanny Le Guen</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         Les consultations sont sur rendez-vous : 
                         <li>les lundis, mardis et vendredis</li>
@@ -52,7 +52,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Julie Canton-Arino</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 8h30-12h00, 14h00-19h15</li>
                         <li>Mardi 8h30-12h00, 14h00-18h30</li>
@@ -71,7 +71,7 @@
             
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Pierre Casedevant</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 8h30-12h15, 14h30-19h00</li>
                         <li>Mardi 8h30-12h15, visites à domicile l'après-midi</li>
@@ -90,7 +90,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Isabelle Ader Casedevant</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 9h00-12h00, 13h00-19h00</li>
                         <li>Mardi 9h00-12h00, visites à domicile l'après-midi</li>
@@ -109,7 +109,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Laure Elise Martin</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 9h00-12h00, visites à domicile l'après-midi de 14h00 à 17h00, consultations de 17h00 à 18h00</li>
                         <li>Mardi 9h00-12h00, 14h00-19h00</li>
@@ -128,7 +128,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Laura Arroyo Olalla</div>
-                <div class="doctor-email" style="color: white;">
+                <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Mardi 9h00-12h00, 14h00-16h00</li>
                         <li>Mercredi 9h00-12h00, 14h00-18h00</li>
