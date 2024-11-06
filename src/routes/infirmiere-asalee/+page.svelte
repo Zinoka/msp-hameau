@@ -33,22 +33,9 @@
         <div class="doctors-container">
             <h1 style="color: #325592;">Infirmière Asalée</h1>
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Jean</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
-            </div>
-            <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Martine</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
-            </div>
-            <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Paul</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Nathalie Pujol</div>
+                <div class="doctor-address" style="color: white;">L'infirmière Asalée reçoit du lundi au vendredi pour des prises en charge en éducation thérapeutique concernant notammennt le diabéte, l'arrêt du tabac, le dépistage des maladies cognitives.</div>
+                <div class="doctor-address" style="color: white; margin-top: 10%;">Il faut en parler au préalable avec votre médecin traitant qui vous adressera à l'infirmière Asalée si il le juge nécessaire.</div>
             </div>
         </div>
         <div class="footer-buttons">

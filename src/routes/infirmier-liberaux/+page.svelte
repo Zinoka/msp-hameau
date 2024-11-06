@@ -50,7 +50,6 @@
                 <div class="doctor-email" style="color: white;">Prise de contact et rendez-vous uniquement par téléphone</div>
                 <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 59 60</div>
                 <div class="doctor-address" style="color: white;">Adresse : 10 rue d'Eauze, 64000 Pau</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=29b30c8e-6e7f-4ef0-96fc-88a4b1c29735")}>Prendre rendez-vous</button>
             </div>
 
 
@@ -68,7 +67,6 @@
                 <div class="doctor-email" style="color: white;">Contact uniquement par téléphone</div>
                 <div class="doctor-phone" style="color: white;">Téléphone : 06 65 00 17 81</div>
                 <div class="doctor-address" style="color: white;">Adresse : 119 avenue du loup, 64000 Pau</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=29b30c8e-6e7f-4ef0-96fc-88a4b1c29735")}>Prendre rendez-vous</button>
             </div>
         </div>
         <div class="footer-buttons">

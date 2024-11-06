@@ -33,22 +33,16 @@
         <div class="doctors-container">
             <h1 style="color: #325592;">Orthophonistes</h1>
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Jean</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
-            </div>
-            <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Martine</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
-            </div>
-            <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Paul</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Rémi Martel</div>
+                <div class="doctor-names" style="color: white;">
+                    <ul>
+                        <li>Mercredi 8h30-18h30</li>
+                        <li>jeudi 8h30-18h30</li>
+                        <li>vendredi 8h30-18h30</li>
+                    </ul>
+                </div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 09 86 57 18 00</div>
+                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://perfactive.fr/list/remi-martel")}>Prendre rendez-vous</button>
             </div>
         </div>
         <div class="footer-buttons">
