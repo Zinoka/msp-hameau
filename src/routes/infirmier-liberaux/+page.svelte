@@ -32,23 +32,43 @@
         </div>
         <div class="doctors-container">
             <h1 style="color: #325592;">Infirmiers Libéraux</h1>
+
+
+
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Jean</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Cabinet infirmier</div>
+                <div class="doctor-email" style="color: white;">
+                    <ul>
+                        <li>Gaelle Langlet</li>
+                        <li>Michelle Hodée Sylvie Stagnitto</li>
+                        <li>Sophie Manguembe</li>
+                    </ul>
+                </div>
+                <div class="doctor-email" style="color: white;">Horaires : Visites à domicile sur rendez-vous de 7h00 à 13h00 puis de 16h00 à 19h00 tous les jours</div>
+                <div class="doctor-email" style="color: white;">Dimanche et jours fériés inclus</div>
+                <div class="doctor-email" style="color: white;">Permanence de 11h30 à 12h00 du lundi au vendredi</div>
+                <div class="doctor-email" style="color: white;">Prise de contact et rendez-vous uniquement par téléphone</div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 59 60</div>
+                <div class="doctor-address" style="color: white;">Adresse : 10 rue d'Eauze, 64000 Pau</div>
+                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=29b30c8e-6e7f-4ef0-96fc-88a4b1c29735")}>Prendre rendez-vous</button>
             </div>
+
+
+
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Martine</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
-            </div>
-            <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Paul</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white; font-size: 24px;">Cabinet infirmier</div>
+                <div class="doctor-email" style="color: white;">
+                    <ul>
+                        <li>Lionel Barral</li>
+                        <li>Julie Guiard</li>
+                    </ul>
+                </div>
+                <div class="doctor-email" style="color: white;">Horaires : Tous les jours de 6h30 à 18h30</div>
+                <div class="doctor-email" style="color: white;">Soins à domicile sur rendez-vous uniquement</div>
+                <div class="doctor-email" style="color: white;">Contact uniquement par téléphone</div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 06 65 00 17 81</div>
+                <div class="doctor-address" style="color: white;">Adresse : 119 avenue du loup, 64000 Pau</div>
+                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=29b30c8e-6e7f-4ef0-96fc-88a4b1c29735")}>Prendre rendez-vous</button>
             </div>
         </div>
         <div class="footer-buttons">
