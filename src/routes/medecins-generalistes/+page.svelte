@@ -34,9 +34,9 @@
             <h1 style="color: #325592;">Médecins Généralistes</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Fanny Le Guen</div>
+                <span style="color: white;">Les consultations sont sur rendez-vous :</span>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        Les consultations sont sur rendez-vous : 
                         <li>les lundis, mardis et vendredis</li>
                         <li>les mercredis et jeudis en alternance</li>
                         <li>les samedis matin (uniquement pour les urgences en alternance avec d'autres médecins du quartier)</li>

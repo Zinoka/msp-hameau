@@ -33,22 +33,39 @@
         <div class="doctors-container">
             <h1 style="color: #325592;">Kinésithérapeutes</h1>
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Jean</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Jonathan Barberet</div>
+                <div class="doctor-names" style="color: white;">
+                    <ul>
+                        <li>Du lundi au vendredi de 9h00 à 19h00</li>
+                    </ul>
+                </div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
+
+
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Martine</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Émilie Cavero</div>
+                <div class="doctor-names" style="color: white;">
+                    <ul>
+                        <li>Du lundi au jeudi de 8h30 à 18h00</li>
+                        <li>Vendredi de 8h30 à 14h00</li>
+                    </ul>
+                </div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
+
+
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Dupont Paul</div>
-                <div class="doctor-email" style="color: white;">Email :</div>
-                <div class="doctor-phone" style="color: white;">Téléphone :</div>
-                <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous</button>
+                <div class="doctor-title" style="color: white;">Virginie Leleu</div>
+                <div class="doctor-names" style="color: white;">
+                    <ul>
+                        <li>Du lundi au vendredi de 9h00 à 19h00</li>
+                    </ul>
+                </div>
+                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
         </div>
         <div class="footer-buttons">

@@ -38,17 +38,19 @@
                 <div class="doctor-address" style="color: white; margin-top: 10%;">Il faut en parler au préalable avec votre médecin traitant qui vous adressera à l'infirmière Asalée si il le juge nécessaire.</div>
             </div>
         </div>
-        <div class="footer-buttons">
-            <button class="footer-button">Accueil</button>
-            <button class="footer-button">Les Praticiens</button>
-            <button class="footer-button">Contact</button>
-            <button class="footer-button">Mentions Légales</button>
-            <button class="footer-button">Horaires</button>
-            <button class="footer-button">Rendez-vous</button>
-        </div>
-        <div class="footer-text">
-            <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
-            <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
+        <div style="position: absolute; bottom: 0; width: 100%;">
+            <div class="footer-buttons">
+                <button class="footer-button">Accueil</button>
+                <button class="footer-button">Les Praticiens</button>
+                <button class="footer-button">Contact</button>
+                <button class="footer-button">Mentions Légales</button>
+                <button class="footer-button">Horaires</button>
+                <button class="footer-button">Rendez-vous</button>
+            </div>
+            <div class="footer-text">
+                <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+                <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
+            </div>
         </div>
     </body>
 </html>
