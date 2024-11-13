@@ -37,9 +37,9 @@
                 <span style="color: white;">Les consultations sont sur rendez-vous :</span>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>les lundis, mardis et vendredis</li>
-                        <li>les mercredis et jeudis en alternance</li>
-                        <li>les samedis matin (uniquement pour les urgences en alternance avec d'autres médecins du quartier)</li>
+                        <li>Lundi 9h00-17h00</li>
+                        <li>Mardi et vendredi 9h00-19h00</li>
+                        <li>Mercredi et Jeudi en alternance (le matin 9h00-12h00, visites l'après-midi)</li>
                     </ul>
                 </div>
                 <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 00 02</div>

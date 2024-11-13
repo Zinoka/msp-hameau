@@ -34,7 +34,7 @@
             <h1 style="color: #325592;">Pharmaciens</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Frédéric Pinot et Laurent Couret</div>
-                <div class="doctor-title" style="color: white;">Pharmaciens à Aprium, pharmacie de la Paix</div>
+                <div class="doctor-title" style="color: white;">Pharmacie de la Paix Aprium</div>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 8h30 à 20h00</li>
@@ -49,7 +49,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Sophie Maréchal</div>
-                <div class="doctor-title" style="color: white;">Pharmacienne à la pharmacie Berlioz</div>
+                <div class="doctor-title" style="color: white;">Pharmacie du centre Berlioz</div>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 8h30 à 12h30 et de 14h00 à 19h30</li>
@@ -57,7 +57,6 @@
                     </ul>
                 </div>
                 <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 68 94</div>
-                <div class="doctor-phone" style="color: white;">Mobile : 06 01 27 73 35</div>
                 <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://pharmacieberlioz-pau.pharmavie.fr")}>Site web</button>
             </div>

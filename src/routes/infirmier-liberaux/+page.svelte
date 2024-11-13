@@ -36,11 +36,12 @@
 
 
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Cabinet infirmier</div>
+                <div class="doctor-title" style="color: white;">Cabinet infirmier du Hameau</div>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Gaelle Langlet</li>
-                        <li>Michelle Hodée Sylvie Stagnitto</li>
+                        <li>Michele ROTA</li>
+                        <li>Sylvie Stagnitto</li>
                         <li>Sophie Manguembe</li>
                     </ul>
                 </div>
