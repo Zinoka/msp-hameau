@@ -40,7 +40,7 @@
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Gaelle Langlet</li>
-                        <li>Michele ROTA</li>
+                        <li>Michele Rota</li>
                         <li>Sylvie Stagnitto</li>
                         <li>Sophie Manguembe</li>
                     </ul>

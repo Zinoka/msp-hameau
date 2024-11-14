@@ -127,7 +127,7 @@
 
 
             <div class="doctor-card">
-                <div class="doctor-title" style="color: white;">Dr. Laura Arroyo Olalla</div>
+                <div class="doctor-title" style="color: white;">Dr. Laura Arroyo Olalla (médecin collaboratrice)</div>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Mardi 9h00-12h00, 14h00-16h00</li>
