@@ -34,6 +34,8 @@
             <h1 style="color: #325592;">Orthophonistes</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Rémi Martel</div>
+                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/RemiMartel.jpg" alt="Rémi Martel"/>
+
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Mercredi 8h30-18h30</li>
