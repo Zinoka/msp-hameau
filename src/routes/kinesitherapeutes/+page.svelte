@@ -34,6 +34,7 @@
             <h1 style="color: #325592;">Kinésithérapeutes</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Jonathan Barberet</div>
+                <img class="doctor-image" src="images/JonathanBarberet.jpg" alt="Jonathan Barberet"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 9h00 à 19h00</li>
@@ -46,6 +47,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Émilie Cavero</div>
+                <img class="doctor-image" src="images/EmilieCavero.jpg" alt="Émilie Cavero"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au jeudi de 8h30 à 18h00</li>
@@ -59,6 +61,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Virginie Leleu</div>
+                <img class="doctor-image" src="images/VirginieLeleu.jpg" alt="Virginie Leleu"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 9h00 à 19h00</li>

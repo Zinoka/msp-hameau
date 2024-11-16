@@ -34,7 +34,7 @@
             <h1 style="color: #325592;">Médecins Généralistes</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Fanny Le Guen</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/FannyLeGuen.png" alt="Dr Fanny Le Guen"/>
+                <img class="doctor-image" src="images/FannyLeGuen.png" alt="Dr Fanny Le Guen"/>
                 <span style="color: white;">Les consultations sont sur rendez-vous :</span>
                 <div class="doctor-names" style="color: white;">
                     <ul>
@@ -53,7 +53,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Julie Canton-Arino</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/JulieCanton.jpeg" alt="Dr Julie Canton-Arino"/>
+                <img class="doctor-image" src="images/JulieCanton.jpeg" alt="Dr Julie Canton-Arino"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 8h30-12h00, 14h00-19h15</li>
@@ -73,7 +73,7 @@
             
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Pierre Casedevant</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/PierreCasedevant.jpg" alt="Dr Pierre Casedevant"/>
+                <img class="doctor-image" src="images/PierreCasedevant.jpg" alt="Dr Pierre Casedevant"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 8h30-12h15, 14h30-19h00</li>
@@ -93,7 +93,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Isabelle Ader Casedevant</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/IsabelleAderCasedevant.jpg" alt="Dr Isabelle Ader Casedevant"/>
+                <img class="doctor-image" src="images/IsabelleAderCasedevant.jpg" alt="Dr Isabelle Ader Casedevant"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 9h00-12h00, 13h00-19h00</li>
@@ -113,7 +113,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Laure Elise Martin</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/LaureEliseMartin.jpg" alt="Dr Laure Elise Martin"/>
+                <img class="doctor-image" src="images/LaureEliseMartin.jpg" alt="Dr Laure Elise Martin"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Lundi 9h00-12h00, visites à domicile l'après-midi de 14h00 à 17h00, consultations de 17h00 à 18h00</li>
@@ -133,7 +133,7 @@
 
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Dr. Laura Arroyo Olalla (médecin collaboratrice)</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/LauraArroyoOllala.jpg" alt="Dr Laura Arroyo Olalla"/>
+                <img class="doctor-image" src="images/LauraArroyoOllala.jpg" alt="Dr Laura Arroyo Olalla"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Mardi 9h00-12h00, 14h00-16h00</li>

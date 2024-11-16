@@ -47,7 +47,16 @@
 }
 
 .doctor-phone {
+  margin-top: 3.5vh;
   margin-bottom: 2vh;
+}
+
+.doctor-image {
+  border-radius: 50%;
+  width: 50%; 
+  margin-left: 50%; 
+  transform: translateX(-50%); 
+  margin-bottom: 7%;
 }
 
 .doctor-rdv {
@@ -61,6 +70,10 @@
   margin-top: 4vh;
   transform: translateX(-50%);
   padding: 10px 20px;
+}
+
+li {
+  margin-bottom: 7px;
 }
 
 @media (min-width: 1024px) {

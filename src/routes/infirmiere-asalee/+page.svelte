@@ -34,7 +34,7 @@
             <h1 style="color: #325592;">Infirmière Asalée</h1>
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Nathalie Pujol</div>
-                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/NathaliePujol.jpg" alt="Nathalie Pujol"/>
+                <img class="doctor-image" src="images/NathaliePujol.jpg" alt="Nathalie Pujol"/>
                 <div class="doctor-address" style="color: white;">L'infirmière Asalée reçoit du lundi au vendredi pour des prises en charge en éducation thérapeutique concernant notammennt le diabéte, l'arrêt du tabac, le dépistage des maladies cognitives.</div>
                 <div class="doctor-address" style="color: white; margin-top: 10%;">Il faut en parler au préalable avec votre médecin traitant qui vous adressera à l'infirmière Asalée si il le juge nécessaire.</div>
             </div>
