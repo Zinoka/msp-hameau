@@ -76,6 +76,11 @@ li {
   margin-bottom: 7px;
 }
 
+.images-container {
+  width: 90%;
+  height: 50vh;
+}
+
 @media (min-width: 1024px) {
   .doctor-card {
     max-width: 600px;

@@ -45,6 +45,12 @@
                         <li>Sophie Manguembe</li>
                     </ul>
                 </div>
+                <div class="images-container">
+                    <img class="doctor-image" style="transform: translate(-80%, 5%);" src="images/GaelleLanglet.jpg" alt="Gaelle Langlet"/>
+                    <img class="doctor-image" style="transform: translate(-10%, -70%);" src="images/MicheleHodee.jpg" alt="Michele Rota"/>
+                    <img class="doctor-image" style="transform: translate(-80%, -150%);" src="images/SylvieStagnitto.jpg" alt="Sylvie Stagnitto"/>
+                    <img class="doctor-image" style="transform: translate(-10%, -190%);" src="images/sophieManguembe.jpg" alt="Sophie Manguembe"/>
+                </div>
                 <div class="doctor-email" style="color: white;">Horaires : Visites à domicile sur rendez-vous de 7h00 à 13h00 puis de 16h00 à 19h00 tous les jours</div>
                 <div class="doctor-email" style="color: white;">Dimanche et jours fériés inclus</div>
                 <div class="doctor-email" style="color: white;">Permanence de 11h30 à 12h00 du lundi au vendredi</div>
@@ -63,6 +69,7 @@
                         <li>Julie Guiard</li>
                     </ul>
                 </div>
+                <img class="doctor-image" src="images/JulieGuiard.jpeg" alt="Julie Guiard"/>
                 <div class="doctor-email" style="color: white;">Horaires : Tous les jours de 6h30 à 18h30</div>
                 <div class="doctor-email" style="color: white;">Soins à domicile sur rendez-vous uniquement</div>
                 <div class="doctor-email" style="color: white;">Contact uniquement par téléphone</div>
