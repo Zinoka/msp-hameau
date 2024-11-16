@@ -27,6 +27,7 @@
 }
 
 .doctor-title {
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 3vh;
 }
@@ -57,7 +58,7 @@
   border-radius: 10px;
   font-weight: 700;
   margin-left: 50%;
-  margin-top: 2vh;
+  margin-top: 4vh;
   transform: translateX(-50%);
   padding: 10px 20px;
 }

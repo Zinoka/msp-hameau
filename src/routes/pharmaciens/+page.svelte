@@ -35,6 +35,8 @@
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Frédéric Pinot et Laurent Couret</div>
                 <div class="doctor-title" style="color: white;">Pharmacie de la Paix Aprium</div>
+                <img style="border-radius: 50%; width: 50%; margin-left: 30%; transform: translateX(-30%); margin-bottom: 10%" src="images/FredericPinot.png" alt="Frédéric Pinot"/>
+                <img style="border-radius: 50%; width: 50%; margin-left: 70%; transform: translateX(-70%); margin-bottom: 10%" src="images/LaurentCouret.png" alt="Laurent Couret"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 8h30 à 20h00</li>
@@ -50,6 +52,7 @@
             <div class="doctor-card">
                 <div class="doctor-title" style="color: white;">Sophie Maréchal</div>
                 <div class="doctor-title" style="color: white;">Pharmacie du centre Berlioz</div>
+                <img style="border-radius: 50%; width: 50%; margin-left: 50%; transform: translateX(-50%); margin-bottom: 10%" src="images/SophieMarechal.jpg" alt="Sophie Maréchal"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
                         <li>Du lundi au vendredi de 8h30 à 12h30 et de 14h00 à 19h30</li>
