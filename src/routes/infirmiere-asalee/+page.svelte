@@ -1,8 +1,10 @@
 <script lang="ts">
-    function openExternalLink(url: string) {
+    import { goto } from '$app/navigation';
+
+    function goTo(url: string) {
         setTimeout(() => {
-            window.open(url, '_blank');
-        }, 0);
+            goto(url);
+        }, 400);
     }
 </script>
 

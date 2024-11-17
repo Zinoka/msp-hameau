@@ -1,8 +1,10 @@
 <script lang="ts">
-    function openExternalLink(url: string) {
+    import { goto } from '$app/navigation';
+
+    function goTo(url: string) {
         setTimeout(() => {
-            window.open(url, '_blank');
-        }, 0);
+            goto(url);
+        }, 400);
     }
 </script>
 
@@ -23,11 +25,11 @@
         <div class="navbar">
             <div class="title">Maison de Santé Pluriprofessionnelle</div>
             <div class="right-buttons">
-                <button class="navbar-button">Accueil</button>
+                <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="navbar-button">Les Praticiens</button>
-                <button class="navbar-button">Contact</button>
-                <button class="navbar-button">Horaires</button>
-                <button class="navbar-button">Rendez-vous</button>
+                <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
             </div>
         </div>
         <div class="doctors-container">

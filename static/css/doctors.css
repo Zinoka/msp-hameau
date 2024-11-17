@@ -14,6 +14,8 @@
 }
 
 .doctor-card {
+  display: flex;
+  flex-direction: column;
   background-color: #325592;
   width: 82%;
   margin: 10px 10px 30px 10px;
@@ -47,13 +49,13 @@
 }
 
 .doctor-phone {
-  margin-top: 3.5vh;
+  margin-top: 1vh;
   margin-bottom: 2vh;
 }
 
 .doctor-image {
   border-radius: 50%;
-  width: 50%; 
+  width: 45%; 
   margin-left: 50%; 
   transform: translateX(-50%); 
   margin-bottom: 7%;
@@ -67,9 +69,13 @@
   border-radius: 10px;
   font-weight: 700;
   margin-left: 50%;
-  margin-top: 4vh;
+  margin-top: 3vh;
   transform: translateX(-50%);
   padding: 10px 20px;
+}
+
+ul {
+  margin-top: 2vh;
 }
 
 li {
@@ -79,6 +85,28 @@ li {
 .images-container {
   width: 90%;
   height: 50vh;
+}
+
+@media (min-width: 768px) {
+  .doctor-card {
+    width: 72%;
+  }
+
+  ul {
+    margin-top: 0.5vh;
+  }
+
+  .doctor-image {
+    width: 35%;
+  }
+
+  .doctor-rdv {
+    width: 70%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 1024px) {
