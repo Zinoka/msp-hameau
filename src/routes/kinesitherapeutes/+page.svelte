@@ -1,7 +1,9 @@
 <script lang="ts">
-    function openExternalLink(url: string) {
+    import { goto } from '$app/navigation';
+
+    function goTo(url: string) {
         setTimeout(() => {
-            window.open(url, '_blank');
+            goto(url);
         }, 0);
     }
 </script>
@@ -23,11 +25,11 @@
         <div class="navbar">
             <div class="title">Maison de Santé Pluriprofessionnelle</div>
             <div class="right-buttons">
-                <button class="navbar-button">Accueil</button>
+                <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="navbar-button">Les Praticiens</button>
-                <button class="navbar-button">Contact</button>
-                <button class="navbar-button">Horaires</button>
-                <button class="navbar-button">Rendez-vous</button>
+                <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
             </div>
         </div>
         <div class="doctors-container">
@@ -72,12 +74,12 @@
             </div>
         </div>
         <div class="footer-buttons">
-            <button class="footer-button">Accueil</button>
+            <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
             <button class="footer-button">Les Praticiens</button>
-            <button class="footer-button">Contact</button>
-            <button class="footer-button">Mentions Légales</button>
-            <button class="footer-button">Horaires</button>
-            <button class="footer-button">Rendez-vous</button>
+            <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
+            <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
+            <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
+            <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
