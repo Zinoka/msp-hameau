@@ -82,6 +82,10 @@ li {
   margin-bottom: 7px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .images-container {
   width: 90%;
   height: 50vh;
@@ -111,7 +115,7 @@ li {
 
 @media (min-width: 1024px) {
   .doctor-card {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 
