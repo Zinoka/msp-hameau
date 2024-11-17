@@ -51,7 +51,7 @@
                         <li>Samedi de 8h30 à 19h00</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 66 47</div>
+                <a class="doctor-phone" href="tel:0559026647" style="color: white;">Téléphone : 05 59 02 66 47</a>
                 <div class="doctor-address" style="color: white;">Adresse : 155 Boulevard de la paix, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://pharmacie-de-la-paix.aprium-pharmacie.fr")}>Site web</button>
             </div>
@@ -67,7 +67,7 @@
                         <li>Samedi de 8h30 à 12h30</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 68 94</div>
+                <a class="doctor-phone" href="tel:0559026894" style="color: white;">Téléphone : 05 59 02 68 94</a>
                 <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://pharmacieberlioz-pau.pharmavie.fr")}>Site web</button>
             </div>

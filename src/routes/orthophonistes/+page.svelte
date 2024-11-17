@@ -51,7 +51,7 @@
                         <li>vendredi 8h30-18h30</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 09 86 57 18 00</div>
+                <a class="doctor-phone" href="tel:0986571800" style="color: white;">Téléphone : 09 86 57 18 00</a>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://perfactive.fr/list/remi-martel")}>Prendre rendez-vous</button>
             </div>
         </div>

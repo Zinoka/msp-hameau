@@ -42,7 +42,7 @@
                         <li>Du lundi au vendredi de 9h00 à 19h00</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
                 <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
 
@@ -56,7 +56,7 @@
                         <li>Vendredi de 8h30 à 14h00</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
                 <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
 
@@ -69,7 +69,7 @@
                         <li>Du lundi au vendredi de 9h00 à 19h00</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 27 42 58</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
                 <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
         </div>

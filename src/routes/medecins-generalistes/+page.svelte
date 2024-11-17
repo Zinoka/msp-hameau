@@ -51,7 +51,7 @@
                         <li>Mercredi et Jeudi en alternance (le matin 9h00-12h00, visites l'après-midi)</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 00 02</div>
+                <a class="doctor-phone" href="tel:0559840002" style="color: white;">Téléphone : 05 59 84 00 02</a>
                 <div class="doctor-address" style="color: white;">Adresse : 153 Boulevard de la paix, 64000 Pau</div>
                 <div class="doctor-note" style="color: white;">Visites à domicile le mercredi après-midi ou le jeudi après-midi</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=b0a236b1-924f-43bd-b566-203202a7210a")}>Prendre rendez-vous</button>
@@ -72,7 +72,7 @@
                         <li>Samedi matin (uniquement pour les urgences en alternance avec les autres médecins de la maison de santé)</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 63 97</div>
+                <a class="doctor-phone" href="tel:0559026397" style="color: white;">Téléphone : 05 59 02 63 97</a>
                 <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=459ad940-8f88-4b95-8ace-396a9bb5d186")}>Prendre rendez-vous</button>
             </div>
@@ -92,7 +92,7 @@
                         <li>Samedi matin (uniquement pour les urgences en alternance avec les autres médecins de la maison de santé)</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 12 27</div>
+                <a class="doctor-phone" href="tel:0559841227" style="color: white;">Téléphone : 05 59 84 12 27</a>
                 <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=29b30c8e-6e7f-4ef0-96fc-88a4b1c29735")}>Prendre rendez-vous</button>
             </div>
@@ -112,7 +112,7 @@
                         <li>Samedi matin (uniquement pour les urgences en alternance avec les autres médecins de la maison de santé)</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 00 02</div>
+                <a class="doctor-phone" href="tel:0559840002" style="color: white;">Téléphone : 05 59 84 00 02</a>
                 <div class="doctor-address" style="color: white;">Adresse : 153 Boulevard de la paix, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=b3aa4ed8-11b0-442c-94e2-f772a0659412")}>Prendre rendez-vous</button>
             </div>
@@ -132,7 +132,7 @@
                         <li>Samedi matin (uniquement pour les urgences en alternance avec les autres médecins de la maison de santé)</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 00 02</div>
+                <a class="doctor-phone" href="tel:0559840002" style="color: white;">Téléphone : 05 59 84 00 02</a>
                 <div class="doctor-address" style="color: white;">Adresse : 153 Boulevard de la paix, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=a7c6b4b2-be31-4658-be7b-9dc2b8a64725")}>Prendre rendez-vous</button>
             </div>
@@ -149,7 +149,7 @@
                         <li>Jeudi 9h00-12h00, 14h00-18h00</li>
                     </ul>
                 </div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 84 00 02</div>
+                <a class="doctor-phone" href="tel:0559840002" style="color: white;">Téléphone : 05 59 84 00 02</a>
                 <div class="doctor-address" style="color: white;">Adresse : 153 Boulevard de la paix (1ère étage), 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=2105504f-f18d-44e6-9ca7-9a7f4221bac4")}>Prendre rendez-vous</button>
             </div>

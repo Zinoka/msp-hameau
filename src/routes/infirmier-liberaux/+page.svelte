@@ -57,7 +57,7 @@
                 <div class="doctor-email" style="color: white;">Dimanche et jours fériés inclus</div>
                 <div class="doctor-email" style="color: white;">Permanence de 11h30 à 12h00 du lundi au vendredi</div>
                 <div class="doctor-email" style="color: white;">Prise de contact et rendez-vous uniquement par téléphone</div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 05 59 02 59 60</div>
+                <a class="doctor-phone" href="tel:0559025960" style="color: white;">Téléphone : 05 59 02 59 60</a>
                 <div class="doctor-address" style="color: white;">Adresse : 10 rue d'Eauze, 64000 Pau</div>
             </div>
 
@@ -75,7 +75,7 @@
                 <div class="doctor-email" style="color: white;">Horaires : Tous les jours de 6h30 à 18h30</div>
                 <div class="doctor-email" style="color: white;">Soins à domicile sur rendez-vous uniquement</div>
                 <div class="doctor-email" style="color: white;">Contact uniquement par téléphone</div>
-                <div class="doctor-phone" style="color: white;">Téléphone : 06 65 00 17 81</div>
+                <a class="doctor-phone" href="tel:0665001781" style="color: white;">Téléphone : 06 65 00 17 81</a>
                 <div class="doctor-address" style="color: white;">Adresse : 119 avenue du loup, 64000 Pau</div>
             </div>
         </div>
