@@ -4,7 +4,7 @@
     function goTo(url: string) {
         setTimeout(() => {
             goto(url);
-        }, 400);
+        }, 0);
     }
 
     function openExternalLink(url: string) {
