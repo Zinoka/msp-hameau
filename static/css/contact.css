@@ -1,0 +1,43 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 15vh;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  color: #325592;
+  margin-bottom: 3vh;
+  font-weight: 700;
+}
+
+.contact-infos {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #325592;
+}
+
+.contact-text {
+  margin-bottom: 2vh;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+@media screen and (min-width: 1920px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-infos {
+    width: 60%;
+  }
+  .contact-container {
+    width: 1200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
