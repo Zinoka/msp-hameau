@@ -1,0 +1,105 @@
+<script lang="ts">
+    import { goto } from '$app/navigation';
+
+    function goTo(url: string) {
+        setTimeout(() => {
+            goto(url);
+        }, 0);
+    }
+
+    function openExternalLink(url: string) {
+        setTimeout(() => {
+            window.open(url, '_blank');
+        }, 0);
+    }
+</script>
+
+<html lang="fr">
+    <head>
+        <style>html{visibility: hidden;opacity:0;}</style>
+        <title>MSP | Rendez-vous</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="css/rdv.css">
+        <link rel="preconnect" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+        <link rel="stylesheet" href="css/rdv.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title">Maison de Santé Pluriprofessionnelle</div>
+            <div class="right-buttons">
+                <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
+                <button class="navbar-button">Les Praticiens</button>
+                <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+            </div>
+        </div>
+        <div class="rdv-tuto">
+            <div class="rdv-tuto-title">Pour prendre rendez-vous</div>
+            <div class="rdv-tuto-sub-title">Avec un médecin</div>
+            <div class="rdv-tuto-text">
+                <div class="tuto-text">
+                    <p>Vous pouvez joindre le secrétariat de la maison de santé au 01 23 45 67 89 pendant les heures d'ouverture qui sont les suivantes :</p>
+                    <ul>
+                        <li>de 8h30 à 12h00 et de 14h00 à 18h00 du lundi au vendredi</li>
+                        <li>de 8h30 à 11h30 le samedi matin</li>
+                    </ul>
+                    <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
+                    <button class="tuto-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous sur Easydoct</button>
+                </div>
+            </div>
+
+            <div class="rdv-tuto-sub-title">Avec un praticien paramédical</div>
+            <div class="rdv-tuto-text">
+                <div class="tuto-text-doctors">
+                    <p>Diététicien</p>
+                    <p class="tuto-text-name">Julien LACOUE-LABARTHE : du lundi au vendredi.</p>
+
+                    <p>Infirmières</p>
+                    <p class="tuto-text-name">Virginie DELALBRE, Mathilde LEJEUNE & Mélanie PERROY : tous les jours, sur rendez-vous.</p>
+
+                    <p>Infirmières Asalée</p>
+                    <p class="tuto-text-name">Mélanie PERROY : uniquement sur rendez-vous au cabinet ou à domicile; le mardi et jeudi de 9h00 à 19h00.</p>
+
+                    <p>Orthophoniste</p>
+                    <p class="tuto-text-name">Léa MOLLIERE : du lundi au vendredi de 9h00 à 13h00 et de 14h00 à 18h00.</p>
+
+                    <p>Orthoptiste</p>
+                    <p class="tuto-text-name">Laure SEBAT : du lundi au vendredi de 9h00 à 18h00.</p>
+
+                    <p>Ostéopathe</p>
+                    <p class="tuto-text-name">Christophe BORÉ-CAVALLERO : du lundi au vendredi.</p>
+
+                    <p>Pédicure-podologue</p>
+                    <p class="tuto-text-name">Hélène FABRE : du lundi au vendredi de 8h30 à 19h00.</p>
+                </div>
+            </div>
+        </div>
+        <div class="emergency">
+            <div class="emergency-title">En cas d'urgence</div>
+            <div class="emergency-text">
+                <p>Le soir, la nuit et le week-end, vous pouvez appeler le 116117 pour joindre le médecin d'astreinte.</p>
+                <p>En cas d'urgence en journée, la nuit ou le week-end, composez le 15.</p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-buttons">
+                <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
+                <button class="footer-button">Les Praticiens</button>
+                <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
+                <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+            </div>
+            <div class="footer-text">
+                <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+                <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
+            </div>
+        </div>
+    </body>
+</html>

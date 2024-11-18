@@ -10,7 +10,7 @@
     function openExternalLink(url: string) {
         setTimeout(() => {
             window.open(url, '_blank');
-        }, 400);
+        }, 0);
     }
 </script>
 
