@@ -27,6 +27,11 @@ ul {
   margin-left: 18px;
 }
 
+a {
+  text-decoration: none; 
+  color: #325592;
+}
+
 @media screen and (min-width: 1920px) {
   .contact-title {
     font-size: 2.5rem;

@@ -44,7 +44,7 @@
             <div class="rdv-tuto-sub-title">Avec un médecin</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">
-                    <p>Vous pouvez joindre le secrétariat de la maison de santé au 05 59 84 00 02 pendant les heures d'ouverture qui sont les suivantes :</p>
+                    <p>Vous pouvez joindre le secrétariat de la maison de santé au <a href="tel:0559840002">05 59 84 00 02</a> pendant les heures d'ouverture qui sont les suivantes :</p>
                     <ul>
                         <li>de 8h30 à 12h00 et de 14h00 à 18h00 du lundi au vendredi</li>
                         <li>de 8h30 à 11h30 le samedi matin</li>
@@ -83,8 +83,8 @@
         <div class="emergency">
             <div class="emergency-title">En cas d'urgence</div>
             <div class="emergency-text">
-                <p>Le soir, la nuit et le week-end, vous pouvez appeler le 116117 pour joindre le médecin d'astreinte.</p>
-                <p>En cas d'urgence en journée, la nuit ou le week-end, composez le 15.</p>
+                <p>Le soir, la nuit et le week-end, vous pouvez appeler le <a href="tel:166177" style="color: white;">116117</a> pour joindre le médecin d'astreinte.</p>
+                <p>En cas d'urgence en journée, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
             </div>
         </div>
         <div class="footer-container">

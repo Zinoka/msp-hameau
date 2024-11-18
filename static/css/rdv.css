@@ -81,6 +81,11 @@ ul {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: #325592;
+}
+
 @media screen and (min-width: 1680px) {
   .tuto-button {
     max-width: 500px;
@@ -95,5 +100,9 @@ ul {
 
   .tuto-button {
     height: 4vh;
+  }
+
+  .emergency {
+    max-width: 1240px;
   }
 }
