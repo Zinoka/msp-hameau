@@ -81,13 +81,19 @@ ul {
   color: white;
 }
 
+@media screen and (min-width: 1680px) {
+  .tuto-button {
+    max-width: 500px;
+    height: 5vh;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .rdv-tuto {
     max-width: 1240px;
   }
 
   .tuto-button {
-    max-width: 500px;
     height: 4vh;
   }
 }
