@@ -2,6 +2,8 @@
     import { goto } from '$app/navigation';
     import Map from "$lib/Map.svelte";
 
+    let isburgerMenuOpen = false;
+    
     function openExternalLink(url: string) {
         setTimeout(() => {
             window.open(url, '_blank');
@@ -12,6 +14,10 @@
         setTimeout(() => {
             goto(url);
         }, 0);
+    }
+
+    function burgerToggle() {
+        isburgerMenuOpen = !isburgerMenuOpen;
     }
 </script>
 
@@ -39,7 +45,21 @@
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
             </div>
+            <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                <div class="burger-menu-first-line"></div>
+                <div class="burger-menu-second-line"></div>
+                <div class="burger-menu-third-line"></div>
+            </button>
         </div>
+        {#if isburgerMenuOpen}
+            <div class="burger-menu-panel">
+                <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
+                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+            </div>
+        {/if}
         <div class="contact-container">
             <div class="contact-infos">
                 <div class="contact-title">Nous contacter</div>

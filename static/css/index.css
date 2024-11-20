@@ -45,6 +45,70 @@ body {
   background-color: transparent;
 }
 
+.burger-menu {
+  position: absolute;
+  right: 10vw;
+  width: 50px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+.burger-menu-first-line {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 10px;
+  border-radius: 5px;
+}
+
+.burger-menu-second-line {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 20px;
+  border-radius: 5px;
+}
+
+.burger-menu-third-line {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 30px;
+  border-radius: 5px;
+}
+
+.burger-menu-panel {
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 100vh;
+  background-color: white;
+  opacity: 1;
+  z-index: 9;
+  right: 0;
+  top: 8.89vh;
+  animation: burgerMenuButtonAnimation 0.5s ease-in-out forwards;
+}
+
+.burger-menu-button {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #325592;
+  text-decoration: none;
+  border: none;
+  padding: 20px 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .slogan-container {
   position: relative;
   display: flex;
@@ -267,6 +331,15 @@ body {
   text-align: center;
   margin-top: 1vh;
   padding: 10px 20px;
+}
+
+@keyframes burgerMenuButtonAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes sloganAnimation {
