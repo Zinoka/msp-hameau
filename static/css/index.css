@@ -54,10 +54,12 @@ body {
   justify-content: center;
   background-color: transparent;
   border: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .burger-menu-first-line {
-  position: absolute;
   width: 40px;
   height: 3px;
   background-color: #325592;
@@ -66,7 +68,6 @@ body {
 }
 
 .burger-menu-second-line {
-  position: absolute;
   width: 40px;
   height: 3px;
   background-color: #325592;
@@ -75,7 +76,6 @@ body {
 }
 
 .burger-menu-third-line {
-  position: absolute;
   width: 40px;
   height: 3px;
   background-color: #325592;
