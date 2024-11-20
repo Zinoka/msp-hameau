@@ -71,7 +71,8 @@
                         <li>Julie Guiard</li>
                     </ul>
                 </div>
-                <img class="doctor-image" src="images/JulieGuiard.jpeg" alt="Julie Guiard"/>
+                <img class="doctor-image" style="transform: translateX(-100px)" src="images/JulieGuiard.jpeg" alt="Julie Guiard"/>
+                <img class="doctor-image" style="transform: translate(-40px, -80px);" src="images/LionelBarral.jpg" alt="Lionel Barral"/>
                 <div class="doctor-email" style="color: white;">Horaires : Tous les jours de 6h30 à 18h30</div>
                 <div class="doctor-email" style="color: white;">Soins à domicile sur rendez-vous uniquement</div>
                 <div class="doctor-email" style="color: white;">Contact uniquement par téléphone</div>
