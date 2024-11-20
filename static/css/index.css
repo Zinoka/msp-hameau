@@ -442,6 +442,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+
   .right-buttons {
     visibility: visible;
   }
