@@ -85,6 +85,7 @@ body {
 
 .burger-menu-panel {
   position: fixed;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -96,6 +97,22 @@ body {
   right: 0;
   top: 8.89vh;
   animation: burgerMenuButtonAnimation 0.5s ease-in-out forwards;
+}
+
+.burger-menu-panel-closing {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 100vh;
+  background-color: white;
+  opacity: 1;
+  z-index: 9;
+  right: 0;
+  top: 8.89vh;
+  animation: burgerMenuButtonCloseAnimation 0.5s ease-in-out forwards;
 }
 
 .burger-menu-button {
@@ -339,6 +356,15 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes burgerMenuButtonCloseAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
 

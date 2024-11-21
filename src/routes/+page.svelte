@@ -2,6 +2,7 @@
     import { goto } from '$app/navigation';
 
     let isburgerMenuOpen = false;
+    let init = true;
 
     function goTo(url: string) {
         setTimeout(() => {
@@ -16,6 +17,7 @@
     }
 
     function burgerToggle() {
+        init = false;
         isburgerMenuOpen = !isburgerMenuOpen;
     }
 </script>
@@ -51,6 +53,14 @@
         </div>
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">
+                <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
+                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
+                <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+            </div>
+        {:else if !isburgerMenuOpen && !init}
+            <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="burger-menu-button">Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
