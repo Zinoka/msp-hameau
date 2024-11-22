@@ -86,14 +86,21 @@ a {
   color: #325592;
 }
 
-@media screen and (min-width: 1680px) {
+@media (min-width: 820px) {
+  .tuto-button {
+    max-width: 400px;
+    height: 4.5vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .tuto-button {
     max-width: 500px;
     height: 5vh;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media (min-width: 1920px) {
   .rdv-tuto {
     max-width: 1240px;
   }
