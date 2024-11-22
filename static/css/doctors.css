@@ -55,9 +55,9 @@
 
 .doctor-image {
   border-radius: 50%;
-  width: 45%; 
-  margin-left: 50%; 
-  transform: translateX(-50%); 
+  width: 45%;
+  margin-left: 50%;
+  transform: translateX(-50%);
   margin-bottom: 7%;
 }
 
@@ -93,7 +93,7 @@ a {
 
 @media (min-width: 768px) {
   .doctor-card {
-    width: 72%;
+    width: 60%;
   }
 
   ul {
@@ -114,6 +114,9 @@ a {
 }
 
 @media (min-width: 1024px) {
+  .title {
+    width: 40%;
+  }
   .doctor-card {
     max-width: 500px;
   }

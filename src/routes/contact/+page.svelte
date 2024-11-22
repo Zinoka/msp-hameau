@@ -21,6 +21,12 @@
         init = false;
         isburgerMenuOpen = !isburgerMenuOpen;
     }
+
+    async function scrollToDiv() {
+        await goto("/");
+        const element = document.getElementById("practitioners");
+        element?.scrollIntoView({ behavior: 'smooth' });
+    }
 </script>
 
 <html lang="fr">
@@ -42,7 +48,7 @@
             <div class="title">Maison de Santé Pluriprofessionnelle</div>
             <div class="right-buttons">
                 <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="navbar-button">Les Praticiens</button>
+                <button class="navbar-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -56,7 +62,7 @@
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -64,7 +70,7 @@
         {:else if !isburgerMenuOpen && !init}
             <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
