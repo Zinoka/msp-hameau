@@ -473,6 +473,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .footer-text {
+    height: 80px;
+  }
   .burger-menu {
     display: none;
   }
