@@ -106,9 +106,9 @@
                     <div class="title-horaires">Pédicure-podologue</div>
                     <p>Hélène FABRE : du lundi au vendredi de 8h30 à 19h.</p>
                 </div>
+                <div style="height: 15vh"></div>
             </div>
         </div>
-            
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
             <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>

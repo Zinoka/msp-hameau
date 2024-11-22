@@ -183,9 +183,7 @@
                 <div class="doctor-address" style="color: white;">Adresse : 153 Boulevard de la paix (1ère étage), 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau?practitioner=2105504f-f18d-44e6-9ca7-9a7f4221bac4")}>Prendre rendez-vous</button>
             </div>
-
-
-
+            <div style="height: 10vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

@@ -102,6 +102,7 @@
                 <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
                 <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
             </div>
+            <div style="height: 10vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

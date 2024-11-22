@@ -117,6 +117,7 @@
                     <p>En cas d'urgence en journée, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
                 </div>
             </div>
+            <div style="height: 10vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

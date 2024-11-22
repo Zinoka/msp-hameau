@@ -70,6 +70,7 @@
                 <div class="doctor-address" style="color: white;">L'infirmière Asalée reçoit du lundi au vendredi pour des prises en charge en éducation thérapeutique concernant notammennt le diabéte, l'arrêt du tabac, le dépistage des maladies cognitives.</div>
                 <div class="doctor-address" style="color: white; margin-top: 10%;">Il faut en parler au préalable avec votre médecin traitant qui vous adressera à l'infirmière Asalée si il le juge nécessaire.</div>
             </div>
+            <div style="height: 10vh"></div>
         </div>
         <div style="position: absolute; bottom: 0; width: 100%;">
             <div class="footer-text">

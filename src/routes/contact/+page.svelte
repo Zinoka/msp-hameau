@@ -86,6 +86,7 @@
                 <p class="contact-text">Des informations vous seront communiquées pour vous orienter immédiatement vers les solutions les plus adaptées au regard de votre état de santé.</p>
             </div>
             <Map />
+            <div style="height: 15vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

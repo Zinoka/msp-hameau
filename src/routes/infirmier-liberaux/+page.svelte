@@ -109,6 +109,7 @@
                 <a class="doctor-phone" href="tel:0665001781" style="color: white;">Téléphone : 06 65 00 17 81</a>
                 <div class="doctor-address" style="color: white;">Adresse : 119 avenue du loup, 64000 Pau</div>
             </div>
+            <div style="height: 10vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
