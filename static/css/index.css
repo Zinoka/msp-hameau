@@ -449,6 +449,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .burger-menu-panel {
+    width: 35vw;
+  }
   .navbar-button {
     font-size: 0.8rem;
     font-weight: 600;
