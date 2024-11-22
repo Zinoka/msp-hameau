@@ -75,7 +75,7 @@
             <div class="rdv-tuto-title">Nos horaires</div>
             <div class="category">Médecins de la Maison de Santé</div>
             <div class="rdv-tuto-text">
-                <div class="tuto-text">
+                <div>
                     <p>Les secrétaires vous accueillent pour la prise de rendez-vous ou pour tout renseignement du lundi au vendredi de 8h30 à 12h et de 14h à 18h, le samedi de 8h30 à 11h30.</p>
                     <p>Consultations : sur rendez-vous du lundi au vendredi de 8h à 12h et de 14h à 18h30, et le samedi matin de 8h à 12h.</p>
                     <p>Urgences : tous les matins de lundi à vendredi, accueil sans rendez-vous de 8h à 11h.</p>
@@ -84,7 +84,7 @@
 
             <div class="category">Praticiens paramédicaux</div>
             <div class="rdv-tuto-text">
-                <div class="tuto-text" style="margin-bottom: 50px;">
+                <div>
                     <div class="title-horaires">Diététicien</div>
                     <p>Julien LACOUE-LABARTHE: du lundi au vendredi.</p>
 
@@ -107,20 +107,11 @@
                     <p>Hélène FABRE : du lundi au vendredi de 8h30 à 19h.</p>
                 </div>
             </div>
+        </div>
             
-        <div class="footer-container">
-            <div class="footer-buttons">
-                <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="footer-button">Les Praticiens</button>
-                <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
-                <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
-                <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
-                <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-            </div>
-            <div class="footer-text">
-                <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
-                <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
-            </div>
+        <div class="footer-text">
+            <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+            <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
         </div>
     </body>
 </html>

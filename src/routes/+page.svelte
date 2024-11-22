@@ -20,6 +20,11 @@
         init = false;
         isburgerMenuOpen = !isburgerMenuOpen;
     }
+
+    function scrollToDiv(id: string) {
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: 'smooth' });
+    }
 </script>
 
 <html lang="fr">
@@ -41,7 +46,7 @@
             <div class="title">Maison de Santé Pluriprofessionnelle</div>
             <div class="right-buttons">
                 <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="navbar-button">Les Praticiens</button>
+                <button class="navbar-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
                 <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -55,7 +60,7 @@
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -63,7 +68,7 @@
         {:else if !isburgerMenuOpen && !init}
             <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button">Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -78,7 +83,7 @@
             <div class="welcome-text">
                 <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu'elle est divisée en <strong>7 lieux</strong> sur le quartier du Hameau (Ousse des Bois et Berlioz)</p>
                 <p style="margin-top: 30px;">Nous sommes une équipe de <strong>19</strong> professionnels</p>
-                <ul style="margin-top: 30px; margin-left: 20px;">
+                <ul style="margin-top: 30px; margin-left: 20px;" id="practitioners">
                     <li>Médecins généralistes</li>
                     <li>Pharmaciens</li>
                     <li>Orthophonistes</li>
@@ -148,14 +153,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-buttons">
-            <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
-            <button class="footer-button">Les Praticiens</button>
-            <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
-            <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
-            <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
-            <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

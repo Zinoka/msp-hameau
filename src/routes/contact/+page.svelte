@@ -81,19 +81,11 @@
                 </ul>
                 <p class="contact-text" style="margin-top: 2vh;">Attention: Vous souhaitez contacter un praticien para-médical ?</p>
                 <p class="contact-text"><strong>Contactez-le directement par téléphone.</strong></p>
-                <p class="contact-text">En cas <strong>d'urgence</strong> ou résultat INR, vous pouvez contacter en semaine de <strong>12h00 à 14h00 et de 18h00 à 20h00</strong> un médecin au cabinet au numéro suivant: <a href="tel:0642043066">06 42 04 30 66</a></p>
+                <p class="contact-text" style="margin-top: 50px;">En cas <strong>d'urgence</strong> ou résultat INR, vous pouvez contacter en semaine de <strong>12h00 à 14h00 et de 18h00 à 20h00</strong> un médecin au cabinet au numéro suivant: <a href="tel:0642043066">06 42 04 30 66</a></p>
                 <p class="contact-text">En dehors de ces horaires d'ouverture, la Maison de Santé est joignable aux mêmes numéros et renvoie vers le numéro d'urgence (<strong><a href="tel:15">15</a></strong>) ou d'organisation de la permanence des soins (<strong><a href="tel:166177">166177</a></strong>)</p>
                 <p class="contact-text">Des informations vous seront communiquées pour vous orienter immédiatement vers les solutions les plus adaptées au regard de votre état de santé.</p>
             </div>
             <Map />
-        </div>
-        <div class="footer-buttons">
-            <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
-            <button class="footer-button">Les Praticiens</button>
-            <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
-            <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
-            <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
-            <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

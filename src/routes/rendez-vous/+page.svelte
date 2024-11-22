@@ -70,7 +70,7 @@
             </div>
         {/if}
         <div class="rdv-tuto">
-            <div class="rdv-tuto-title">Pour prendre rendez-vous</div>
+            <div class="rdv-tuto-title">Rendez-vous</div>
             <div class="rdv-tuto-sub-title">Avec un médecin</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">
@@ -109,27 +109,18 @@
                     <p class="tuto-text-name">Hélène FABRE : du lundi au vendredi de 8h30 à 19h00.</p>
                 </div>
             </div>
-        </div>
-        <div class="emergency">
-            <div class="emergency-title">En cas d'urgence</div>
-            <div class="emergency-text">
-                <p>Le soir, la nuit et le week-end, vous pouvez appeler le <a href="tel:166177" style="color: white;">116117</a> pour joindre le médecin d'astreinte.</p>
-                <p>En cas d'urgence en journée, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
+
+            <div class="emergency">
+                <div class="emergency-title">En cas d'urgence</div>
+                <div class="emergency-text">
+                    <p>Le soir, la nuit et le week-end, vous pouvez appeler le <a href="tel:166177" style="color: white;">116117</a> pour joindre le médecin d'astreinte.</p>
+                    <p>En cas d'urgence en journée, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
+                </div>
             </div>
         </div>
-        <div class="footer-container">
-            <div class="footer-buttons">
-                <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="footer-button">Les Praticiens</button>
-                <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
-                <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
-                <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
-                <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-            </div>
-            <div class="footer-text">
-                <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
-                <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
-            </div>
+        <div class="footer-text">
+            <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+            <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
         </div>
     </body>
 </html>

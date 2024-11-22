@@ -110,14 +110,6 @@
                 <div class="doctor-address" style="color: white;">Adresse : 119 avenue du loup, 64000 Pau</div>
             </div>
         </div>
-        <div class="footer-buttons">
-            <button class="footer-button" on:click={() => goTo("/")}>Accueil</button>
-            <button class="footer-button">Les Praticiens</button>
-            <button class="footer-button" on:click={() => goTo("/contact")}>Contact</button>
-            <button class="footer-button" on:click={() => goTo("/mentions-legales")}>Mentions Légales</button>
-            <button class="footer-button" on:click={() => goTo("/horaires")}>Horaires</button>
-            <button class="footer-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-        </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 1.5vh;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
             <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>

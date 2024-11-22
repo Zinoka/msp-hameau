@@ -341,12 +341,14 @@ body {
 }
 
 .footer-text {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
   font-size: 0.7rem;
   font-weight: 400;
   color: white;
   background-color: #325592;
   text-align: center;
-  margin-top: 1vh;
   padding: 10px 20px;
 }
 
