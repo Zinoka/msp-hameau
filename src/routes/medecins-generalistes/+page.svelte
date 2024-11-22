@@ -12,6 +12,7 @@
 
     function goTo(url: string) {
         setTimeout(() => {
+            isburgerMenuOpen = false;
             goto(url);
         }, 0);
     }
