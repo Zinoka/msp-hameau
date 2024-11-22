@@ -88,12 +88,16 @@ a {
 
 .images-container {
   width: 90%;
-  height: 50vh;
+  height: 340px;
 }
 
 @media (min-width: 768px) {
   .doctor-card {
     width: 60%;
+  }
+
+  .images-container {
+    height: 40vh;
   }
 
   ul {
@@ -120,10 +124,18 @@ a {
   .doctor-card {
     max-width: 500px;
   }
+
+  .images-container {
+    height: 430px;
+  }
 }
 
 @media (min-width: 1920px) {
   .doctor-card {
     max-width: 550px;
+  }
+
+  .images-container {
+    height: 480px;
   }
 }
