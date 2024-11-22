@@ -54,11 +54,25 @@
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
             </div>
-            <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                <div class="burger-menu-first-line"></div>
-                <div class="burger-menu-second-line"></div>
-                <div class="burger-menu-third-line"></div>
-            </button>
+            {#if isburgerMenuOpen}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line-to-open"></div>
+                    <div class="burger-menu-second-line-to-open"></div>
+                    <div class="burger-menu-third-line-to-open"></div>
+                </button>
+            {:else if !isburgerMenuOpen && init}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line"></div>
+                    <div class="burger-menu-second-line"></div>
+                    <div class="burger-menu-third-line"></div>
+                </button>
+            {:else if !isburgerMenuOpen && !init}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line-to-close"></div>
+                    <div class="burger-menu-second-line-to-close"></div>
+                    <div class="burger-menu-third-line-to-close"></div>
+                </button>
+            {/if}
         </div>
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">

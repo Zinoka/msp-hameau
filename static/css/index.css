@@ -32,7 +32,6 @@ body {
 .right-buttons {
   visibility: hidden;
   margin-left: auto;
-  margin-right: 86px;
 }
 
 .navbar-button {
@@ -81,6 +80,60 @@ body {
   background-color: #325592;
   top: 30px;
   border-radius: 5px;
+}
+
+.burger-menu-first-line-to-open {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 10px;
+  border-radius: 5px;
+  animation: firstLineClosing 0.3s ease-in-out forwards;
+}
+
+.burger-menu-second-line-to-open {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 20px;
+  border-radius: 5px;
+  animation: secondLineClosing 0.3s ease-in-out forwards;
+}
+
+.burger-menu-third-line-to-open {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 30px;
+  border-radius: 5px;
+  animation: thirdLineClosing 0.3s ease-in-out forwards;
+}
+
+.burger-menu-first-line-to-close {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 10px;
+  border-radius: 5px;
+  animation: firstLineOpening 0.3s ease-in-out forwards;
+}
+
+.burger-menu-second-line-to-close {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 20px;
+  border-radius: 5px;
+  animation: secondLineOpening 0.3s ease-in-out forwards;
+}
+
+.burger-menu-third-line-to-close {
+  width: 40px;
+  height: 3px;
+  background-color: #325592;
+  top: 30px;
+  border-radius: 5px;
+  animation: thirdLineOpening 0.3s ease-in-out forwards;
 }
 
 .burger-menu-panel {
@@ -367,6 +420,63 @@ body {
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+@keyframes firstLineClosing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+@keyframes secondLineClosing {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes thirdLineClosing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    background-color: #d3553f;
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@keyframes firstLineOpening {
+  0% {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes secondLineOpening {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40px;
+  }
+}
+
+@keyframes thirdLineOpening {
+  0% {
+    background-color: #d3553f;
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  100% {
+    background-color: #325592;
+    transform: rotate(0);
   }
 }
 
