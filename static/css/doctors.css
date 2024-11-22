@@ -124,6 +124,6 @@ a {
 
 @media (min-width: 1920px) {
   .doctor-card {
-    max-width: 800px;
+    max-width: 550px;
   }
 }
