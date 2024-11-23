@@ -583,6 +583,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .right-buttons {
+    margin-right: 10vw;
+  }
   .footer-text {
     height: 80px;
   }
