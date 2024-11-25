@@ -20,11 +20,15 @@ export class Article extends BaseEntity {
 }
 
 export const getArticleById = async (body: any) => {
-  const article = await db.getRepository(Article).findOneBy({
-    id: body.id,
-  });
+  try {
+    const article = await db.getRepository(Article).findOneBy({
+      id: body.id,
+    });
 
-  return structuredClone(article);
+    return structuredClone(article);
+  } catch (error) {
+    return null;
+  }
 };
 
 export const getArticles = async () => {

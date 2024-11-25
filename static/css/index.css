@@ -406,6 +406,16 @@ body {
   padding: 10px 20px;
 }
 
+.error-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50vh;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #325592;
+  width: 100vw;
+}
+
 @keyframes burgerMenuButtonAnimation {
   0% {
     transform: translateX(100%);
