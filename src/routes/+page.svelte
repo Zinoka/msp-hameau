@@ -152,14 +152,14 @@
                     <p>Il n'y a pas d'actualités pour le moment</p>
                 {/if}
                 {#each data.articles as article}
-                    <div class="news-card">
+                    <button class="news-card" on:click={() => goto(article.id)}>
                         <img src="images/logo.png" alt="news1">
                         <div class="news-text">
                             <h2>{ article.title }</h2>
                             <span>Publié le { article.created_at }</span>
                             <p>{ article.description }</p>
                         </div>
-                    </div>
+                    </button>
                 {/each}
             </div>
             <div style="height: 10vh"></div>

@@ -340,6 +340,7 @@ body {
   background-color: white;
   border-radius: 10px;
   width: 80%;
+  border: none;
 }
 
 .news-card:hover {
