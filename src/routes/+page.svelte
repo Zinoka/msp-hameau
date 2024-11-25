@@ -146,7 +146,7 @@
             <h1>Les Nouvelles Actualités</h1>
             <div class="news-cards-panel" style="margin-bottom: 20px;">
                 {#if data.articles.length === 0}
-                    <p>Il n'y a pas d'actualités pour le moment</p>
+                    <p style="margin-bottom: 50px;">Il n'y a pas d'actualités pour le moment</p>
                 {/if}
                 {#each data.articles as article}
                     <button class="news-card" on:click={() => goto(article.id)}>
