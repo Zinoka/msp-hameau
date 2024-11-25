@@ -15,7 +15,6 @@
 
 .rdv-tuto-sub-title {
   font-size: 1.2em;
-  margin-top: 5%;
   font-weight: bold;
   color: #325592;
 }
@@ -44,7 +43,7 @@
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 ul {
