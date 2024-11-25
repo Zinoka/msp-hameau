@@ -21,6 +21,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"leaflet": "^1.9.4"
+		"@skeletonlabs/skeleton": "^2.10.3",
+		"leaflet": "^1.9.4",
+		"mysql2": "^3.11.4",
+		"reflect-metadata": "^0.2.2",
+		"typeorm": "^0.3.20"
 	}
 }

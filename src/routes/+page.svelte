@@ -1,8 +1,13 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import type { PageServerData } from "./$types"
+
+	export let data: PageServerData
 
     let isburgerMenuOpen = false;
     let init = true;
+
+    console.log(data)
 
     function goTo(url: string) {
         setTimeout(() => {
@@ -143,30 +148,19 @@
         <div class="news-panel">
             <h1>Les Nouvelles Actualités</h1>
             <div class="news-cards-panel" style="margin-bottom: 20px;">
-                <div class="news-card">
-                    <img src="images/logo.png" alt="news1">
-                    <div class="news-text">
-                        <h2>Titre de la publication</h2>
-                        <span>Publié le 26 octobre 2024</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
+                {#if data.articles.length === 0}
+                    <p>Il n'y a pas d'actualités pour le moment</p>
+                {/if}
+                {#each data.articles as article}
+                    <div class="news-card">
+                        <img src="images/logo.png" alt="news1">
+                        <div class="news-text">
+                            <h2>{ article.title }</h2>
+                            <span>Publié le { article.created_at }</span>
+                            <p>{ article.description }</p>
+                        </div>
                     </div>
-                </div>
-                <div class="news-card">
-                    <img src="images/logo.png" alt="news1">
-                    <div class="news-text">
-                        <h2>Titre de la publication</h2>
-                        <span>Publié le 26 octobre 2024</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <img src="images/logo.png" alt="news1">
-                    <div class="news-text">
-                        <h2>Titre de la publication</h2>
-                        <span>Publié le 26 octobre 2024</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis vitae leo tempus pharetra. Aenean commodo ut orci a varius. Curabitur quis maximus libero. Praesent quis nibh et mi faucibus dapibus ultricies ut leo. Morbi et facilisis leo. Sed laoreet odio eu dolor faucibus laoreet. Praesent eget diam nulla. Aliquam eu sem arcu. Vivamus ultricies nisl vel dignissim vulputate. Ut eu dolor eu libero semper laoreet. Mauris facilisis ante lectus, nec tincidunt leo pulvinar et.</p>
-                    </div>
-                </div>
+                {/each}
             </div>
             <div style="height: 10vh"></div>
         </div>
