@@ -416,6 +416,24 @@ body {
   width: 100vw;
 }
 
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  color: #325592;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
 @keyframes burgerMenuButtonAnimation {
   0% {
     transform: translateX(100%);
@@ -591,6 +609,10 @@ body {
   .practitioner-button {
     width: 70vw;
   }
+
+  .login-form {
+    width: 50vw;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -618,6 +640,10 @@ body {
 
   .slogan-container {
     flex-direction: row;
+  }
+
+  .login-form {
+    width: 40vw;
   }
 
   .logo {
@@ -673,6 +699,10 @@ body {
 
   .practitioners-panel h1 {
     margin-bottom: 4vh;
+  }
+
+  .login-form {
+    width: 400px;
   }
 }
 

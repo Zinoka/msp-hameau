@@ -1,6 +1,7 @@
 import { DataSource } from "typeorm";
 import { env_variables } from "../../../hooks.server";
 import { Article } from "$lib/entities/Article";
+import { User } from "$lib/entities/User";
 
 class TypeOrm {
   private static instance: Promise<DataSource> | null = null;
@@ -17,7 +18,7 @@ class TypeOrm {
         password: env_variables.parsed.DB_PASSWORD,
         database: "msp_hameau",
         synchronize: false,
-        entities: [Article],
+        entities: [Article, User],
         logging: false,
       })
         .initialize()
