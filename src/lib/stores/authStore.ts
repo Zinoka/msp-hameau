@@ -27,10 +27,11 @@ export const authHandlers = {
   ): Promise<AuthUser | undefined> => {
     try {
       console.log("email", email, password);
-      const result = await fetch("https://msp-hameau.zino-tech.fr/api/user/", {
+      const result = await fetch("/api/user/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "x-sveltekit-action": "true",
         },
         body: JSON.stringify({
           email: email,
