@@ -3,7 +3,6 @@
 
 	export let data: PageServerData
 
-    console.log(data)
 </script>
 
 <span>{ data.article.title }</span>

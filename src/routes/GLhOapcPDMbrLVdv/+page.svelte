@@ -43,12 +43,6 @@
 				await goto("/protected")
 			} else {
 				success = false
-
-				toastStore.trigger({
-					message: "Merci de vérifier vos identifiants.",
-					background: "variant-filled-error",
-					timeout: 5000,
-				})
 			}
 		} catch (err) {
 			throw new Error(`Erreur lors de la connexion ${err}`)
@@ -123,9 +117,12 @@
                 <h1 style="margin-bottom: 40px; text-align: center;">Connexion</h1>
                 <form class="login-form" action="#" on:submit|preventDefault={login}>
                     <label style="margin-bottom: 10px;" for="username">Nom d'utilisateur</label>
-                    <input style="margin-bottom: 20px; height: 22px;" type="text" id="username" name="username" bind:value={email} required>
+                    <input style="margin-bottom: 20px; height: 30px;" type="text" id="username" name="username" bind:value={email} required>
                     <label style="margin-bottom: 10px;" for="password">Mot de passe</label>
-                    <input style="margin-bottom: 20px; height: 22px;" type="password" id="password" name="password" bind:value={password} required>
+                    <input style="margin-bottom: 20px; height: 30px;" type="password" id="password" name="password" bind:value={password} required>
+                    {#if success === false}
+                        <p style="color: red; text-align: center;">Merci de vérifier vos identifiants.</p>
+                    {/if}
                     <button class="tuto-button" type="submit">Se connecter</button>
                 </form>
             </div>

@@ -36,12 +36,16 @@ export const authHandlers = {
 
       const user = await result.json();
 
-      if (Object.keys(user).length > 0) {
-        const userCredentials: AuthUser = {
-          uid: user.id,
-          email: user.email,
-        };
-        return userCredentials;
+      if (user) {
+        if (Object.keys(user).length > 0) {
+          const userCredentials: AuthUser = {
+            uid: user.id,
+            email: user.email,
+          };
+          return userCredentials;
+        } else {
+          return undefined;
+        }
       }
     } catch (err) {
       throw new Error(
