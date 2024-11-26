@@ -26,7 +26,7 @@ export const authHandlers = {
     password: string
   ): Promise<AuthUser | undefined> => {
     try {
-      console.log(email, password);
+      console.log("email");
       const result = await fetch("/api/user/", {
         method: "POST",
         body: JSON.stringify({
