@@ -356,6 +356,7 @@ body {
 .news-text {
   color: #325592;
   width: 80%;
+  text-align: start;
 }
 
 .news-text h2 {
@@ -688,6 +689,7 @@ body {
     margin: 0 15px 15px 15px;
     margin-left: 15px;
     transform: translateX(0);
+    width: 600px;
   }
 }
 
