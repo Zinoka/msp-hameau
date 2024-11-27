@@ -29,6 +29,23 @@
         const element = document.getElementById(id);
         element?.scrollIntoView({ behavior: 'smooth' });
     }
+
+    function cutText(text: string) {
+        text = text.replace(/\\n/g, '\n');
+
+        if (text.length > 100) {
+            return text.slice(0, 300) + "...";
+        }
+        
+
+        return text;
+    }
+
+    function formatDate(date: string) {
+        const dateObj = new Date(date);
+        const options: any = { day: 'numeric', month: 'long', year: 'numeric' };
+        return new Intl.DateTimeFormat('fr-FR', options).format(dateObj);
+    }
 </script>
 
 <html lang="fr">
@@ -153,8 +170,8 @@
                         <img src="images/logo.png" alt="news1">
                         <div class="news-text">
                             <h2>{ article.title }</h2>
-                            <span>Publié le { article.created_at }</span>
-                            <p>{ article.description }</p>
+                            <span>Publié le { formatDate(article.created_at) }</span>
+                            <p>{ cutText(article.description) }</p>
                         </div>
                     </button>
                 {/each}

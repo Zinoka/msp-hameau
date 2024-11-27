@@ -4,6 +4,10 @@
 
 	export let data: PageServerData
 
+    if (data.article.description) {
+        data.article.description = data.article.description.replace(/\\n/g, '\n');
+    }
+    
 	let isburgerMenuOpen = false;
     let init = true;
 
@@ -23,6 +27,12 @@
         await goto("/");
         const element = document.getElementById("practitioners");
         element?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function formatDate(date: string) {
+        const dateObj = new Date(date);
+        const options: any = { day: 'numeric', month: 'long', year: 'numeric' };
+        return new Intl.DateTimeFormat('fr-FR', options).format(dateObj);
     }
 </script>
 
@@ -93,10 +103,10 @@
 		</div>
 		<div class="rdv-tuto">
             <div class="rdv-tuto-title">{ data.article.title }</div>
-            <div class="rdv-tuto-sub-title">Publié le { data.article.created_at }</div>
+            <div class="rdv-tuto-sub-title">Publié le { formatDate(data.article.created_at) }</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">
-                    <p>{ data.article.description }</p>
+                    <p style="white-space: pre-wrap;">{ data.article.description }</p>
                 </div>
             </div>
             <div style="height: 10vh"></div>
