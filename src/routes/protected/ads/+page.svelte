@@ -121,10 +121,9 @@
         <div class="contact-container">
             <div class="contact-infos">
                 <div class="contact-title">Panneau admin</div>
-                <p class="contact-text">Vos annonces</p>
-                <p class="contact-text">Voici les articles publié :</p>
+                <p class="contact-text">Articles publié</p>
 
-                <table>
+                <table style="margin-bottom: 30px;">
                     <thead>
                       <tr>
                         <th>ID</th>
@@ -148,7 +147,7 @@
                     </tbody>
                   </table>
 
-                <p class="contact-text">Publication d'annonces:</p>
+                <p class="contact-text">Publier une annonce:</p>
             </div>
             <div style="height: 15vh"></div>
         </div>
