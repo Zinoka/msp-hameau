@@ -12,7 +12,8 @@
 			const authUser: AuthUser | null | undefined = $userStore
 			if (
 				(!authUser && $page.url.pathname === "/protected") ||
-				($userStore && $page.url.pathname === "/GLhOapcPDMbrLVdv")
+				($userStore && $page.url.pathname === "/GLhOapcPDMbrLVdv") ||
+				(!authUser && $page.url.pathname === "/protected/ads")
 			) {
 				await goto("/")
 			}

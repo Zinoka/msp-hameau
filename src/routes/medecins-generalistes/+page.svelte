@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { authHandlers, userStore } from "$lib/stores/authStore";
     
     let isburgerMenuOpen = false;
     let init = true;
@@ -27,6 +28,8 @@
         const element = document.getElementById("practitioners");
         element?.scrollIntoView({ behavior: 'smooth' });
     }
+
+    $: authUser = userStore;
 </script>
 
 <html lang="fr">
@@ -51,26 +54,30 @@
                 <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+                {#if $authUser}
+                    <button class="navbar-button" on:click={() => goTo("/protected/ads")}>Admin</button>
+                    <button class="navbar-button" on:click={authHandlers.logOut}>Déconnexion</button>
+                {/if}
             </div>
             {#if isburgerMenuOpen}
-            <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                <div class="burger-menu-first-line-to-open"></div>
-                <div class="burger-menu-second-line-to-open"></div>
-                <div class="burger-menu-third-line-to-open"></div>
-            </button>
-        {:else if !isburgerMenuOpen && init}
-            <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                <div class="burger-menu-first-line"></div>
-                <div class="burger-menu-second-line"></div>
-                <div class="burger-menu-third-line"></div>
-            </button>
-        {:else if !isburgerMenuOpen && !init}
-            <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                <div class="burger-menu-first-line-to-close"></div>
-                <div class="burger-menu-second-line-to-close"></div>
-                <div class="burger-menu-third-line-to-close"></div>
-            </button>
-        {/if}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line-to-open"></div>
+                    <div class="burger-menu-second-line-to-open"></div>
+                    <div class="burger-menu-third-line-to-open"></div>
+                </button>
+            {:else if !isburgerMenuOpen && init}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line"></div>
+                    <div class="burger-menu-second-line"></div>
+                    <div class="burger-menu-third-line"></div>
+                </button>
+            {:else if !isburgerMenuOpen && !init}
+                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
+                    <div class="burger-menu-first-line-to-close"></div>
+                    <div class="burger-menu-second-line-to-close"></div>
+                    <div class="burger-menu-third-line-to-close"></div>
+                </button>
+            {/if}
         </div>
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">
@@ -79,6 +86,10 @@
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+                {#if $authUser}
+                    <button class="burger-menu-button" on:click={() => goTo("/protected/ads")}>Admin</button>
+                    <button class="burger-menu-button" on:click={authHandlers.logOut}>Déconnexion</button>
+                {/if}
             </div>
         {:else if !isburgerMenuOpen && !init}
             <div class="burger-menu-panel-closing">
@@ -87,6 +98,10 @@
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
+                {#if $authUser}
+                    <button class="burger-menu-button" on:click={() => goTo("/protected/ads")}>Admin</button>
+                    <button class="burger-menu-button" on:click={authHandlers.logOut}>Déconnexion</button>
+                {/if}
             </div>
         {/if}
         <div class="doctors-container">

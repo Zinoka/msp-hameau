@@ -40,7 +40,7 @@
 					uid: userCredential?.uid,
 					email: userCredential?.email,
 				}
-				await goto("/protected")
+				await goto("/protected/ads")
 			} else {
 				success = false
 			}
