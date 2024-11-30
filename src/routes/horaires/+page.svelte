@@ -118,32 +118,6 @@
                 </div>
             </div>
 
-            <div class="category">Praticiens paramédicaux</div>
-            <div class="rdv-tuto-text">
-                <div>
-                    <div class="title-horaires">Diététicien</div>
-                    <p>Julien LACOUE-LABARTHE: du lundi au vendredi.</p>
-
-                    <div class="title-horaires">Infirmières</div>
-                    <p>Virginie DELALBRE, Mathilde LEJEUNE & Mélanie PERROY : tous les jours, sur rendez-vous.</p>
-
-                    <div class="title-horaires">Infirmière Asalée</div>
-                    <p>Mélanie PERROY : uniquement sur RDV au cabinet ou à domicile ; le mardi et jeudi de 9h à 19h.</p>
-
-                    <div class="title-horaires">Orthophoniste</div>
-                    <p>Léa MOLLIÈRE : du lundi au vendredi, 9h-13h & 14h-18h.</p>
-
-                    <div class="title-horaires">Orthoptiste</div>
-                    <p>Laure SEBAT : du lundi au vendredi de 9h à 18h.</p>
-
-                    <div class="title-horaires">Ostéopathe</div>
-                    <p>Christophe BORÉ-CAVALLERO : du lundi au vendredi.</p>
-
-                    <div class="title-horaires">Pédicure-podologue</div>
-                    <p>Hélène FABRE : du lundi au vendredi de 8h30 à 19h.</p>
-                </div>
-                <div style="height: 15vh"></div>
-            </div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>

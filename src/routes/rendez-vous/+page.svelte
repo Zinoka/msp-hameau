@@ -120,32 +120,6 @@
                 </div>
             </div>
 
-            <div class="rdv-tuto-sub-title">Avec un praticien paramédical</div>
-            <div class="rdv-tuto-text">
-                <div class="tuto-text-doctors">
-                    <p>Diététicien</p>
-                    <p class="tuto-text-name">Julien LACOUE-LABARTHE : du lundi au vendredi.</p>
-
-                    <p>Infirmières</p>
-                    <p class="tuto-text-name">Virginie DELALBRE, Mathilde LEJEUNE & Mélanie PERROY : tous les jours, sur rendez-vous.</p>
-
-                    <p>Infirmières Asalée</p>
-                    <p class="tuto-text-name">Mélanie PERROY : uniquement sur rendez-vous au cabinet ou à domicile; le mardi et jeudi de 9h00 à 19h00.</p>
-
-                    <p>Orthophoniste</p>
-                    <p class="tuto-text-name">Léa MOLLIERE : du lundi au vendredi de 9h00 à 13h00 et de 14h00 à 18h00.</p>
-
-                    <p>Orthoptiste</p>
-                    <p class="tuto-text-name">Laure SEBAT : du lundi au vendredi de 9h00 à 18h00.</p>
-
-                    <p>Ostéopathe</p>
-                    <p class="tuto-text-name">Christophe BORÉ-CAVALLERO : du lundi au vendredi.</p>
-
-                    <p>Pédicure-podologue</p>
-                    <p class="tuto-text-name">Hélène FABRE : du lundi au vendredi de 8h30 à 19h00.</p>
-                </div>
-            </div>
-
             <div class="emergency">
                 <div class="emergency-title">En cas d'urgence</div>
                 <div class="emergency-text">
