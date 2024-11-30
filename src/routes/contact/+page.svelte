@@ -110,13 +110,16 @@
             <div class="contact-infos">
                 <div class="contact-title">Nous contacter</div>
                 <p class="contact-text">Contacter les médecins de la Maison de Santé</p>
-                <p class="contact-text">Le secrétariat médical est joignable au <strong><a href="tel:0562920466">05 62 92 04 66</a></strong> selon les modalités suivantes :</p>
+                <p class="contact-text">Le secrétariat médical est joignable au <strong><a href="tel:0559840002">05 59 84 00 02</a></strong> selon les modalités suivantes :</p>
                 <ul>
-                    <li>de <strong>8h30 à 12h00 et de 14h00 à 18H00</strong> du lundi au vendredi</li>
-                    <li>de <strong>8h30 à 11h30</strong> le samedi matin</li>
+                    <li>Lundi de <strong>8h30 à 12h00 et de 14h00 à 19H00</strong></li>
+                    <li>Mardi de <strong>8h30 à 12h00 et de 14h00 à 18h30</strong></li>
+                    <li>Mercredi de <strong>8h30 à 12h00</strong></li>
+                    <li>Jeudi de <strong>8h30 à 12h00</strong></li>
+                    <li>Vendredi de <strong>8h30 à 12h00 et 14h00 à 18h30</strong></li>
                 </ul>
                 <p class="contact-text" style="margin-top: 2vh;">Attention: Vous souhaitez contacter un praticien para-médical ?</p>
-                <p class="contact-text"><strong>Contactez-le directement par téléphone.</strong></p>
+                <p class="contact-text"><strong>Contactez-le directement.</strong></p>
             </div>
             <Map />
             <div style="height: 15vh"></div>
