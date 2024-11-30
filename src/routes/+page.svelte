@@ -181,14 +181,16 @@
                     <p style="margin-bottom: 50px;">Il n'y a pas d'actualités pour le moment</p>
                 {/if}
                 {#each data.articles as article}
-                    <button class="news-card" on:click={() => goto(article.id)}>
-                        <img src="images/logo.png" alt="news1">
-                        <div class="news-text">
-                            <h2>{ article.title }</h2>
-                            <span>Publié le { formatDate(article.created_at) }</span>
-                            <p>{ cutText(article.description) }</p>
-                        </div>
-                    </button>
+                    {#if article.enable}
+                        <button class="news-card" on:click={() => goto(article.id)}>
+                            <img src="images/logo.png" alt="news1">
+                            <div class="news-text">
+                                <h2>{ article.title }</h2>
+                                <span>Publié le { formatDate(article.created_at) }</span>
+                                <p>{ cutText(article.description) }</p>
+                            </div>
+                        </button>
+                    {/if}
                 {/each}
             </div>
             <div style="height: 10vh"></div>
