@@ -17,6 +17,9 @@ export class Article extends BaseEntity {
 
   @Column({ type: "varchar" })
   description: string;
+
+  @Column({ type: "boolean" })
+  enable: string;
 }
 
 export const getArticleById = async (body: any) => {
@@ -24,15 +27,33 @@ export const getArticleById = async (body: any) => {
     const article = await db.getRepository(Article).findOneBy({
       id: body.id,
     });
-
     return structuredClone(article);
   } catch (error) {
+    console.error(error);
     return null;
   }
 };
 
 export const getArticles = async () => {
-  const articles = await db.getRepository(Article).find();
+  try {
+    const articles = await db.getRepository(Article).find();
+    return structuredClone(articles);
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+};
 
-  return structuredClone(articles);
+export const disableArticleById = async (article: any) => {
+  try {
+    const originalDate = new Date(article.id.created_at);
+    article.id.created_at = originalDate.toISOString().split("T")[0];
+
+    await db
+      .getRepository(Article)
+      .update(article.id.id, { enable: !article.id.enable });
+  } catch (error) {
+    console.error(error);
+  }
+  return;
 };

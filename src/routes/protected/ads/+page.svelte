@@ -2,8 +2,12 @@
     import { userStore, authHandlers } from "$lib/stores/authStore"
     import { goto } from '$app/navigation';
     import type { PageServerData } from "./$types"
-
+    import { switchArticleStatus } from "$lib/stores/articleStore";
+    import type { Article } from "$lib/entities/Article";
+    
 	export let data: PageServerData
+
+    $: articleStatus = false;
 
     let isburgerMenuOpen = false;
     let init = true;
@@ -26,9 +30,14 @@
         isburgerMenuOpen = !isburgerMenuOpen;
     }
 
-    function scrollToDiv(id: string) {
-        const element = document.getElementById(id);
+    async function scrollToDiv() {
+        await goto("/");
+        const element = document.getElementById("practitioners");
         element?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function disableArticle(item: Article) {
+        switchArticleStatus(item);
     }
 
     $: authUser = userStore
@@ -43,16 +52,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="/css/index.css">
+        <link rel="preconnect" href="/css/contact.css">
+        <link rel="preconnect" href="/css/annonce.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+        <link rel="stylesheet" href="/css/contact.css">
         <link rel="stylesheet" href="/css/index.css">
-
+        <link rel="stylesheet" href="/css/annonce.css">
     </head>
     <body>
         <div class="navbar">
             <div class="title">Maison de Santé Pluriprofessionnelle</div>
             <div class="right-buttons">
                 <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="navbar-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="navbar-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -84,7 +96,7 @@
         {#if isburgerMenuOpen}
             <div class="burger-menu-panel">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -96,7 +108,7 @@
         {:else if !isburgerMenuOpen && !init}
             <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
                 <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
                 <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
@@ -106,6 +118,40 @@
                 {/if}
             </div>
         {/if}
+        <div class="contact-container">
+            <div class="contact-infos">
+                <div class="contact-title">Panneau admin</div>
+                <p class="contact-text">Vos annonces</p>
+                <p class="contact-text">Voici les articles publié :</p>
+
+                <table>
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Titre</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {#each data.articles as article}
+                        <tr>
+                          <td>{article.id}</td>
+                          <td>{article.title}</td>
+                          <td>{article.enable ? "En ligne" : "Désactivé" }</td>
+                          <td>
+                            <button on:click={() => goto("/"+article.id)}>Voir</button>
+                            <button on:click={() => disableArticle(article)}>{ article.enable ? "Désactiver" : "Réactiver"}</button>
+                          </td>
+                        </tr>
+                      {/each}
+                    </tbody>
+                  </table>
+
+                <p class="contact-text">Publication d'annonces:</p>
+            </div>
+            <div style="height: 15vh"></div>
+        </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
             <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
