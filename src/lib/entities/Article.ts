@@ -57,3 +57,15 @@ export const disableArticleById = async (article: any) => {
   }
   return;
 };
+
+export const createArticle = async (article: any) => {
+  try {
+    const date = new Date();
+    article.created_at = date.toISOString().split("T")[0];
+    article.enable = true;
+    await db.getRepository(Article).insert(article);
+  } catch (error) {
+    console.error(error);
+  }
+  return;
+};

@@ -4,6 +4,7 @@
     import type { PageServerData } from "./$types"
     import { switchArticleStatus } from "$lib/stores/articleStore";
     import type { Article } from "$lib/entities/Article";
+    import { createArticle } from "$lib/stores/articleStore";
     
 	export let data: PageServerData
 
@@ -11,6 +12,9 @@
 
     let isburgerMenuOpen = false;
     let init = true;
+    let title = '';
+    let imageName = '';
+    let description = '';
 
     function goTo(url: string) {
         setTimeout(() => {
@@ -39,6 +43,13 @@
     function disableArticle(item: Article) {
         switchArticleStatus(item);
     }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        createArticle({ title, description });
+
+        alert('Article créé avec succès !');
+    };
 
     $: authUser = userStore
 </script>
@@ -121,9 +132,23 @@
         <div class="contact-container">
             <div class="contact-infos">
                 <div class="contact-title">Panneau admin</div>
-                <p class="contact-text">Articles publié</p>
+                <p class="contact-text">Publier une annonce:</p>
 
-                <table style="margin-bottom: 30px;">
+                <form on:submit={handleSubmit}>
+                    <div>
+                        <label for="name">Titre de l'article :</label>
+                        <input type="text" id="name" bind:value={title} placeholder="Titre de l'annonce" required />
+                    </div>
+                    <div>
+                        <label for="message">Article :</label>
+                        <textarea class="textarea-message" id="message" bind:value={description} placeholder="Saisissez ici votre article" required></textarea>
+                    </div>
+                    <button class="submit-button" type="submit">Envoyer</button>
+                </form>
+
+                <p class="contact-text" style="margin-top: 35px;">Articles publié</p>
+
+                <table style="margin-bottom: 30px; width: 100%;">
                     <thead>
                       <tr>
                         <th>ID</th>
@@ -135,19 +160,17 @@
                     <tbody>
                       {#each data.articles as article}
                         <tr>
-                          <td>{article.id}</td>
-                          <td>{article.title}</td>
-                          <td>{article.enable ? "En ligne" : "Désactivé" }</td>
-                          <td>
-                            <button on:click={() => goto("/"+article.id)}>Voir</button>
-                            <button on:click={() => disableArticle(article)}>{ article.enable ? "Désactiver" : "Réactiver"}</button>
+                          <td style="text-align: center;">{article.id}</td>
+                          <td style="text-align: center;">{article.title}</td>
+                          <td style="text-align: center;">{article.enable ? "En ligne" : "Désactivé" }</td>
+                          <td class="td-buttons" style="text-align: center;">
+                            <button class="admin-button-table" on:click={() => goto("/"+article.id)} style="margin-right: 5%;">Voir</button>
+                            <button class="admin-button-table-status" on:click={() => disableArticle(article)}>{ article.enable ? "Désactiver" : "Réactiver"}</button>
                           </td>
                         </tr>
                       {/each}
                     </tbody>
                   </table>
-
-                <p class="contact-text">Publier une annonce:</p>
             </div>
             <div style="height: 15vh"></div>
         </div>
