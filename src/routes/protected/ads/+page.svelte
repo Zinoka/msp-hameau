@@ -60,26 +60,6 @@
         }
     };
 
-
-    const handleSubmit = async () => {
-        const base64Image = await new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = reject;
-            reader.readAsDataURL(image); // Assurez-vous que "image" est un fichier
-        });
-
-        const article = {
-            title,
-            description,
-            image: base64Image,
-        };
-
-        await createArticle(article);
-        alert("Formulaire soumis avec succès !");
-    };
-
-
     $: authUser = userStore
 </script>
 
