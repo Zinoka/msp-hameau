@@ -11,13 +11,12 @@ export const switchArticleStatus = (article: any) => {
   });
 };
 
-export const createArticle = (article: any) => {
-  fetch("/api/article/post/", {
+export const createArticle = async (article: any) => {
+  await fetch("/api/article/post/", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
       "x-sveltekit-action": "true",
     },
-    body: JSON.stringify(article),
+    body: article,
   });
 };

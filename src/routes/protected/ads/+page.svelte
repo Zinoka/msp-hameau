@@ -13,8 +13,9 @@
     let isburgerMenuOpen = false;
     let init = true;
     let title = '';
-    let imageName = '';
     let description = '';
+    let image = null;
+    let imagePreview = null;
 
     function goTo(url: string) {
         setTimeout(() => {
@@ -44,12 +45,40 @@
         switchArticleStatus(item);
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        createArticle({ title, description });
-
-        alert('Article créé avec succès !');
+    const handleImageChange = (event) => {
+    const file = event.target.files[0];
+        if (file) {
+        image = file;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            imagePreview = e.target.result;
+        };
+        reader.readAsDataURL(file);
+        } else {
+        image = null;
+        imagePreview = null;
+        }
     };
+
+
+    const handleSubmit = async () => {
+        const base64Image = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = reject;
+            reader.readAsDataURL(image); // Assurez-vous que "image" est un fichier
+        });
+
+        const article = {
+            title,
+            description,
+            image: base64Image,
+        };
+
+        await createArticle(article);
+        alert("Formulaire soumis avec succès !");
+    };
+
 
     $: authUser = userStore
 </script>
@@ -134,17 +163,35 @@
                 <div class="contact-title">Panneau admin</div>
                 <p class="contact-text">Publier une annonce:</p>
 
-                <form on:submit={handleSubmit}>
-                    <div>
-                        <label for="name">Titre de l'article :</label>
-                        <input type="text" id="name" bind:value={title} placeholder="Titre de l'annonce" required />
+                <form method="post" enctype="multipart/form-data">
+                    <div class="group">
+                        <div>
+                            <label for="title">Titre de l'article :</label>
+                            <input name="title" type="text" id="title" bind:value={title} placeholder="Titre de l'annonce" required />
+                        </div>
+                        <div>
+                            <label for="message">Article :</label>
+                            <textarea name="description" class="textarea-message" id="message" bind:value={description} placeholder="Saisissez ici votre article" required></textarea>
+                        </div>
+                        <label for="image">Image :</label>
+                        <input
+                            type="file"
+                            id="file"
+                            name="fileToUpload"
+                            accept=".jpg, .jpeg, .png"
+                            required
+                            on:change={handleImageChange}
+                        />
+                        {#if imagePreview}
+                          <div class="image-preview">
+                            <p style="margin-top: 20px; margin-bottom: 20px;">Aperçu :</p>
+                            <img src={imagePreview} alt="Aperçu de l'image" />
+                          </div>
+                        {/if}
                     </div>
-                    <div>
-                        <label for="message">Article :</label>
-                        <textarea class="textarea-message" id="message" bind:value={description} placeholder="Saisissez ici votre article" required></textarea>
-                    </div>
-                    <button class="submit-button" type="submit">Envoyer</button>
-                </form>
+                  
+                    <button type="submit">Submit</button>
+                  </form>
 
                 <p class="contact-text" style="margin-top: 35px;">Articles publié</p>
 

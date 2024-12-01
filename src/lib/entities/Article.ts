@@ -61,8 +61,11 @@ export const disableArticleById = async (article: any) => {
 export const createArticle = async (article: any) => {
   try {
     const date = new Date();
+
     article.created_at = date.toISOString().split("T")[0];
     article.enable = true;
+    article.imageName = article.image;
+
     await db.getRepository(Article).insert(article);
   } catch (error) {
     console.error(error);

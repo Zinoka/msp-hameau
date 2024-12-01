@@ -20,6 +20,7 @@ body {
   width: 100vw;
   box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
+  top: 0;
 }
 
 .title {
