@@ -147,11 +147,11 @@
                     <div class="group">
                         <div>
                             <label for="title">Titre de l'article :</label>
-                            <input name="title" type="text" id="title" bind:value={title} placeholder="Titre de l'annonce" required />
+                            <input name="title" style="margin-bottom: 20px;" type="text" id="title" bind:value={title} placeholder="Titre de l'annonce" required />
                         </div>
                         <div>
                             <label for="message">Article :</label>
-                            <textarea name="description" class="textarea-message" id="message" bind:value={description} placeholder="Saisissez ici votre article" required></textarea>
+                            <textarea name="description" style="margin-bottom: 20px;" class="textarea-message" id="message" bind:value={description} placeholder="Saisissez ici votre article" required></textarea>
                         </div>
                         <label for="image">Image :</label>
                         <input
@@ -170,7 +170,7 @@
                         {/if}
                     </div>
                   
-                    <button type="submit">Submit</button>
+                    <button class="submit-button" type="submit">Publier l'article</button>
                   </form>
 
                 <p class="contact-text" style="margin-top: 35px;">Articles publié</p>
