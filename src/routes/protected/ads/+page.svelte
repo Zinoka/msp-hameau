@@ -74,10 +74,12 @@
         <link rel="preconnect" href="/css/index.css">
         <link rel="preconnect" href="/css/contact.css">
         <link rel="preconnect" href="/css/annonce.css">
+        <link rel="preconnect" href="/css/article.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="/css/contact.css">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="/css/annonce.css">
+        <link rel="stylesheet" href="/css/article.css">
     </head>
     <body>
         <div class="navbar">

@@ -183,7 +183,7 @@
                 {#each data.articles as article}
                     {#if article.enable}
                         <button class="news-card" on:click={() => goto(article.id)}>
-                            <img src="images/logo.png" alt="news1">
+                            <img src="uploads/{ article.imageName }" alt="news1">
                             <div class="news-text">
                                 <h2>{ article.title }</h2>
                                 <span>Publié le { formatDate(article.created_at) }</span>

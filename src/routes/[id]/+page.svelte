@@ -48,9 +48,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="css/index.css">
         <link rel="preconnect" href="css/rdv.css">
+        <link rel="preconnect" href="css/article.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/rdv.css">
+        <link rel="stylesheet" href="css/article.css">
 
     </head>
     <body>
@@ -112,11 +114,9 @@
                 {/if}
             </div>
         {/if}
-		<div class="welcome-image">
-			<img src="images/doctors.png" alt="docteurs msp hameau">
-		</div>
 		<div class="rdv-tuto">
             <div class="rdv-tuto-title">{ data.article.title }</div>
+            <img src="uploads/{data.article.imageName}" alt="{data.article.title}" />
             <div class="rdv-tuto-sub-title">Publié le { formatDate(data.article.created_at) }</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">

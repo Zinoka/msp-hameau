@@ -1,0 +1,26 @@
+img {
+  width: 70%;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  img {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1920px) {
+  img {
+    width: 350px;
+  }
+}
