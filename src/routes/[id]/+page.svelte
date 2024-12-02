@@ -116,7 +116,11 @@
         {/if}
 		<div class="rdv-tuto">
             <div class="rdv-tuto-title">{ data.article.title }</div>
-            <img src="uploads/{data.article.imageName}" alt="{data.article.title}" />
+            {#if data.article.imageName}
+                <img src="uploads/{ data.article.imageName }" alt="{ data.article.title }">
+            {:else}
+                <img src="images/logo.png" alt="Logo par defaut MSP">
+            {/if}
             <div class="rdv-tuto-sub-title">Publié le { formatDate(data.article.created_at) }</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">

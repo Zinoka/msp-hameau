@@ -180,7 +180,11 @@
                 {#each data.articles as article}
                     {#if article.enable}
                         <button class="news-card" on:click={() => goto(article.id)}>
-                            <img src="uploads/{ article.imageName }" alt="news1">
+                            {#if article.imageName}
+                                <img src="uploads/{ article.imageName }" alt="{ article.title }">
+                            {:else}
+                                <img src="images/logo.png" alt="Logo par defaut MSP">
+                            {/if}
                             <div class="news-text">
                                 <h2>{ article.title }</h2>
                                 <span>Publié le { formatDate(article.created_at) }</span>
