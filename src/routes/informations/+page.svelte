@@ -53,8 +53,7 @@
             <div class="right-buttons">
                 <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="navbar-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
-                <button class="navbar-button" on:click={() => goTo("/contact")}>Contact</button>
-                <button class="navbar-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="navbar-button" on:click={() => goTo("/informations")}>Informations</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
                     <button class="navbar-button" on:click={() => goTo("/protected/ads")}>Admin</button>
@@ -85,8 +84,8 @@
             <div class="burger-menu-panel">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
-                <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
-                <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
+                
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
                     <button class="burger-menu-button" on:click={() => goTo("/protected/ads")}>Admin</button>
@@ -97,8 +96,8 @@
             <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="burger-menu-button" on:click={() => scrollToDiv()}>Les Praticiens</button>
-                <button class="burger-menu-button" on:click={() => goTo("/contact")}>Contact</button>
-                <button class="burger-menu-button" on:click={() => goTo("/horaires")}>Horaires</button>
+                <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
+                
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
                     <button class="burger-menu-button" on:click={() => goTo("/protected/ads")}>Admin</button>
@@ -108,6 +107,18 @@
         {/if}
         <div class="contact-container">
             <div class="contact-infos">
+
+                <div class="contact-title">Nos horaires</div>
+                <div class="category">Médecins de la Maison de Santé</div>
+                <div class="contact-text" style="margin-bottom: 50px;">
+                    <div>
+                        <p>Les secrétaires vous accueillent pour la prise de rendez-vous ou pour tout renseignement du lundi au vendredi de 8h30 à 12h et de 14h à 18h, le samedi de 8h30 à 11h30.</p>
+                        <p>Consultations : sur rendez-vous du lundi au vendredi de 8h à 12h et de 14h à 18h30, et le samedi matin de 8h à 12h.</p>
+                        <p>Urgences : tous les matins de lundi à vendredi, accueil sans rendez-vous de 8h à 11h.</p>
+                    </div>
+                </div>
+        
+                
                 <div class="contact-title">Nous contacter</div>
                 <p class="contact-text">Contacter les médecins de la Maison de Santé</p>
                 <p class="contact-text">Le secrétariat médical est joignable au <strong><a href="tel:0559840002">05 59 84 00 02</a></strong> selon les modalités suivantes :</p>

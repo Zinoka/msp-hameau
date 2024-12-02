@@ -28,8 +28,16 @@ ul {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #325592;
+}
+
+.category {
+  font-size: 1.2em;
+  margin-top: 50px;
+  font-weight: bold;
+  color: #325592;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -38,7 +46,7 @@ a {
   }
 
   .contact-infos {
-    width: 60%;
+    width: 80%;
   }
   .contact-container {
     width: 1200px;
