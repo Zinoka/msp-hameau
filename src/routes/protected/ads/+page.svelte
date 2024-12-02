@@ -161,7 +161,6 @@
                             id="file"
                             name="fileToUpload"
                             accept=".jpg, .jpeg, .png"
-                            required
                             on:change={handleImageChange}
                         />
                         {#if imagePreview}

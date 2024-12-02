@@ -1,5 +1,4 @@
 import { createArticle, getArticles } from "$lib/entities/Article";
-import { fail } from "@sveltejs/kit";
 import { writeFileSync } from "fs";
 
 export const load = async ({ params }) => {
@@ -13,30 +12,28 @@ export const load = async ({ params }) => {
 export const actions = {
   default: async ({ request }) => {
     const formData = Object.fromEntries(await request.formData());
+    let hasImage = false;
+    let timeStamp = null;
+    let fileName = "";
 
-    if (
-      !(formData.fileToUpload as File).name ||
-      (formData.fileToUpload as File).name === "undefined"
-    ) {
-      return fail(400, {
-        error: true,
-        message: "You must provide a file to upload",
-      });
+    if ((formData.fileToUpload as File).name) {
+      const { fileToUpload } = formData as { fileToUpload: File };
+
+      timeStamp = new Date().getTime();
+
+      writeFileSync(
+        `static/uploads/${timeStamp}-${fileToUpload.name}`,
+        Buffer.from(await fileToUpload.arrayBuffer())
+      );
+
+      fileName = fileToUpload.name;
+      hasImage = true;
     }
-
-    const { fileToUpload } = formData as { fileToUpload: File };
-
-    const timeStamp = new Date().getTime();
-
-    writeFileSync(
-      `static/uploads/${timeStamp}-${fileToUpload.name}`,
-      Buffer.from(await fileToUpload.arrayBuffer())
-    );
 
     createArticle({
       title: formData.title,
       description: formData.description,
-      image: `${timeStamp}-${fileToUpload.name}`,
+      image: hasImage ? `${timeStamp}-${fileName}` : null,
     });
 
     return {
