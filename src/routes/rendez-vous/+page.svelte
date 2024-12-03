@@ -110,10 +110,10 @@
             <div class="rdv-tuto-sub-title">Avec un médecin</div>
             <div class="rdv-tuto-text">
                 <div class="tuto-text">
-                    <p>Vous pouvez joindre le secrétariat de la maison de santé au <a href="tel:0559840002">05 59 84 00 02</a> pendant les heures d'ouverture qui sont les suivantes :</p>
+                    <p>Vous pouvez joindre le secrétariat de la maison de santé au <a href="tel:0559840002"><strong>05 59 84 00 02</strong></a> pendant les heures d'ouverture qui sont les suivantes :</p>
                     <ul>
-                        <li>de 8h30 à 12h00 et de 14h00 à 18h00 du lundi au vendredi</li>
-                        <li>de 8h30 à 11h30 le samedi matin</li>
+                        <li>de <strong>8h30 à 19h00</strong> du lundi au vendredi</li>
+                        <li>de <strong>8h30 à 12h00</strong> le samedi (sur rendez-vous pris le jour même)</li>
                     </ul>
                     <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
                     <button class="tuto-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous sur Easydoct</button>
