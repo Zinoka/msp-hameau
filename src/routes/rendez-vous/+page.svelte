@@ -113,7 +113,7 @@
                     <p>Vous pouvez joindre le secrétariat de la maison de santé au <a href="tel:0559840002"><strong>05 59 84 00 02</strong></a> pendant les heures d'ouverture qui sont les suivantes :</p>
                     <ul>
                         <li>de <strong>8h30 à 19h00</strong> du lundi au vendredi</li>
-                        <li>de <strong>8h30 à 12h00</strong> le samedi (sur rendez-vous pris le jour même)</li>
+                        <li>de <strong>8h30 à 12h00</strong> le samedi (pas de prise de rendez-vous non urgent)</li>
                     </ul>
                     <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
                     <button class="tuto-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous sur Easydoct</button>

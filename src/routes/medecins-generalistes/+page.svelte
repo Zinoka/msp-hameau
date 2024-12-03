@@ -115,6 +115,7 @@
                         <li>Lundi 9h00-17h00</li>
                         <li>Mardi et vendredi 9h00-19h00</li>
                         <li>Mercredi et Jeudi en alternance (le matin 9h00-12h00, visites l'après-midi)</li>
+                        <li>Samedi matin (uniquement pour les urgences en alternance avec les autres médecins de la maison de santé)</li>
                     </ul>
                 </div>
                 <a class="doctor-phone" href="tel:0559840002" style="color: white;">Téléphone : 05 59 84 00 02</a>
