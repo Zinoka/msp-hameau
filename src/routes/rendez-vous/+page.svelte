@@ -123,8 +123,7 @@
             <div class="emergency">
                 <div class="emergency-title">En cas d'urgence</div>
                 <div class="emergency-text">
-                    <p>Le soir, la nuit et le week-end, vous pouvez appeler le <a href="tel:116117" style="color: white;">116117</a> pour joindre le médecin d'astreinte.</p>
-                    <p>En cas d'urgence en journée, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
+                    <p>En cas d'urgence, la nuit ou le week-end, composez le <a href="tel:15" style="color: white;">15</a>.</p>
                 </div>
             </div>
             <div style="height: 10vh"></div>
