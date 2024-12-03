@@ -8,12 +8,12 @@
   onMount(() => {
     const mapElement = document.getElementById("map");
     if (mapElement) {
-      map = L.map(mapElement).setView([43.31466981403429, -0.34484956799309563], 13);
+      map = L.map(mapElement).setView([43.318625486445875, -0.3459285582523891], 13);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: '&copy; OpenStreetMap contributors',
       }).addTo(map);
 
-      L.marker([43.31466981403429, -0.34484956799309563])
+      L.marker([43.318625486445875, -0.3459285582523891])
         .addTo(map)
         .bindPopup("MSP Hameau")
         .openPopup();
