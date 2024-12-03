@@ -62,7 +62,6 @@
         <link rel="preconnect" href="css/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
-
     </head>
     <body>
         <div class="navbar">

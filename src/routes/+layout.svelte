@@ -4,6 +4,8 @@
     import { goto } from '$app/navigation';
     import { userStore, type AuthUser } from "$lib/stores/authStore"
     import { page } from "$app/stores"
+  	import CookieBanner from '$lib/components/CookieBanner.svelte';
+  	import CookieConsent from '$lib/components/CookieConsent.svelte';
 
     initializeStores();
 
@@ -23,4 +25,5 @@
 	}
 </script>
 
+<CookieBanner />
 <slot />

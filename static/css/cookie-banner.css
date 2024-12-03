@@ -1,0 +1,50 @@
+/* Bannière de cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cookie-banner button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+  background-color: #0056b3;
+}
+
+.cookie-banner button:last-child {
+  background-color: #f44336;
+}
+
+.cookie-banner button:last-child:hover {
+  background-color: #c62828;
+}
+
+.cookie-buttons {
+  position: relative;
+  right: 0;
+}
