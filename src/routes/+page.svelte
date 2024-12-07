@@ -126,7 +126,7 @@
         <div class="welcome-panel">
             <h1>Bienvenue !</h1>
             <div class="welcome-text">
-                <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu'elle est divisée en <strong>7 lieux</strong> sur le quartier du Hameau (Ousse des Bois et Berlioz)</p>
+                <p>Notre maison de santé du Hameau est <strong>multisite</strong>, c'est à dire qu'elle est divisée en <strong>7 lieux</strong> dans le quartier du Hameau à Pau (Ousse des Bois et Berlioz)</p>
                 <p style="margin-top: 30px;">Nous sommes une équipe de <strong>19</strong> professionnels</p>
                 <ul style="margin-top: 30px; margin-left: 20px;" id="practitioners">
                     <li>Médecins généralistes</li>
