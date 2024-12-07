@@ -118,6 +118,7 @@
                     </ul>
                 </div>
                 <a class="doctor-phone" href="tel:0986571800" style="color: white;">Téléphone : 09 86 57 18 00</a>
+                <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://perfactive.fr/list/remi-martel")}>Prendre rendez-vous</button>
             </div>
             <div style="height: 10vh"></div>
