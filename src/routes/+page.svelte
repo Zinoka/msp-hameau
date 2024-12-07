@@ -69,6 +69,7 @@
             <div class="right-buttons">
                 <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="navbar-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="navbar-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
                 <button class="navbar-button" on:click={() => goTo("/informations")}>Informations</button>
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
@@ -100,6 +101,7 @@
             <div class="burger-menu-panel">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
                 <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
@@ -111,6 +113,7 @@
             <div class="burger-menu-panel-closing">
                 <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
                 <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
+                <button class="burger-menu-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
                 <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
                 <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
@@ -170,7 +173,7 @@
                 </button>
             </div>
         </div>
-        <div class="news-panel">
+        <div class="news-panel" id="actualités">
             <h1>Les Nouvelles Actualités</h1>
             <div class="news-cards-panel" style="margin-bottom: 20px;">
                 {#if data.articles.length === 0}
