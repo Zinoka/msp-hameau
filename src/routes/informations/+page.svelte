@@ -43,9 +43,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="css/index.css">
         <link rel="preconnect" href="css/contact.css">
+        <link rel="preconnect" href="css/rdv.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/rdv.css">
     </head>
     <body>
         <div class="navbar">
@@ -112,12 +114,12 @@
             <div class="contact-infos">
                 <div class="contact-title">Nous contacter</div>
                 <div class="contact-text" style="margin-bottom: 50px;">
-                    <p>La Maison de Santé Pluriprofessionnelle est ouverte tous les jours de <strong>8h30 à 19h00</strong></p>
-                    <p style="margin-top: 30px; margin-bottom: 20px;">Accueil téléphonique au <strong><a href="tel:0559840002">05 59 84 00 02</a></strong></p>
-                    <ul>
-                        <li style="margin-bottom: 10px;">Du lundi au vendredi de <strong>8h30 à 19h00</strong></li>
-                        <li>Le samedi de <strong>8h00 à 12h00</strong> (sur rendez-vous pris le jour même)</li>
-                    </ul>
+                    <p>Vous pouvez joindre les secrétaires médicales de <strong>8h30 à 18h00</strong> du lundi au vendredi au <a href="tel:0559840002"><strong>05 59 84 00 02</strong></a> pour les Dr Isabelle Ader Casedevant, Dr Fanny Le Guen, Dr Laure Elise Martin</p>
+                    <p style="margin-top: 20px;">Au <a href="tel:0559841227"><strong>05 59 84 12 27</strong></a> pour le Dr Pierre Casedevant</p>
+                    <p style="margin-top: 20px;">Au <a href="tel:0559026397"><strong>05 59 02 63 97</strong></a> pour le Dr Julie Canton Arino</p>
+                    <p style="margin-top: 20px;">Une permanence téléphonique pour les urgences des patients de la maison de santé est assurée par les médecins de <strong>18h00 à 19h00</strong> du lundi au vendredi et de <strong>8h00 à 12h00</strong> le samedi (pas de prise de rendez-vous non urgent)</p>
+                    <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
+                    <button class="tuto-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous sur Easydoct</button>
                 </div>
                 <p class="contact-text"><strong>Attention:</strong> Vous souhaitez contacter un praticien para-médical ?</p>
                 <p class="contact-text"><strong>Contactez-le directement.</strong></p>
