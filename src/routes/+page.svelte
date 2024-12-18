@@ -179,7 +179,7 @@
                 {#if data.articles.length === 0}
                     <p style="margin-bottom: 50px;">Il n'y a pas d'actualités pour le moment</p>
                 {/if}
-                {#each data.articles as article}
+                {#each data.articles.slice(0, 3) as article}
                     {#if article.enable}
                         <button class="news-card" on:click={() => goto(article.id)}>
                             {#if article.imageName}
