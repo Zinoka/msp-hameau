@@ -1,21 +1,20 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
-    import Map from "$lib/Map.svelte";
     import { authHandlers, userStore } from "$lib/stores/authStore";
-
+    
     let isburgerMenuOpen = false;
     let init = true;
     
-    function openExternalLink(url: string) {
-        setTimeout(() => {
-            window.open(url, '_blank');
-        }, 0);
-    }
-
     function goTo(url: string) {
         setTimeout(() => {
             isburgerMenuOpen = false;
             goto(url);
+        }, 0);
+    }
+
+    function openExternalLink(url: string) {
+        setTimeout(() => {
+            window.open(url, '_blank');
         }, 0);
     }
 
@@ -36,18 +35,16 @@
 <html lang="fr">
     <head>
         <style>html{visibility: hidden;opacity:0;}</style>
-        <title>MSP | Informations</title>
+        <title>MSP | Mentions Légales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="css/index.css">
-        <link rel="preconnect" href="css/contact.css">
         <link rel="preconnect" href="css/rdv.css">
+        <link rel="preconnect" href="css/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/rdv.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <div class="navbar">
@@ -57,6 +54,7 @@
                 <button class="navbar-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
                 <button class="navbar-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
                 <button class="navbar-button" on:click={() => goTo("/informations")}>Informations</button>
+                
                 <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
                 {#if $authUser}
                     <button class="navbar-button" on:click={() => goTo("/protected/ads")}>Admin</button>
@@ -110,22 +108,62 @@
                 {/if}
             </div>
         {/if}
-        <div class="contact-container">
-            <div class="contact-infos">
-                <div class="contact-title">Nous contacter</div>
-                <div class="contact-text" style="margin-bottom: 50px;">
-                    <p>Vous pouvez joindre les secrétaires médicales de <strong>8h30 à 18h00</strong> du lundi au vendredi au <a href="tel:0559840002"><strong>05 59 84 00 02</strong></a> pour les Dr Isabelle Ader Casedevant, Dr Fanny Le Guen, Dr Laure Elise Martin</p>
-                    <p style="margin-top: 20px;">Au <a href="tel:0559841227"><strong>05 59 84 12 27</strong></a> pour le Dr Pierre Casedevant</p>
-                    <p style="margin-top: 20px;">Au <a href="tel:0559026397"><strong>05 59 02 63 97</strong></a> pour le Dr Julie Canton Arino</p>
-                    <p style="margin-top: 20px;">Une permanence téléphonique pour les urgences des patients de la maison de santé est assurée par les médecins de <strong>18h00 à 19h00</strong> du lundi au vendredi et de <strong>8h00 à 12h00</strong> le samedi (pas de prise de rendez-vous non urgent)</p>
-                    <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
-                    <button class="tuto-button" on:click={() => openExternalLink("https://www.easydoct.com/rdv/msp-du-hameau-pau")}>Prendre rendez-vous sur Easydoct</button>
+        <div class="rdv-tuto">
+            <div class="rdv-tuto-title">Mentions légales</div>
+            <div class="rdv-tuto-sub-title">Éditeur du site</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p style="margin-bottom: 10px;"><strong>Le présent site est édité par :</strong></p>
+                    <p>Nom ou Raison sociale : Zino-Tech</p>
+                    <p>Adresse : 10 chemin de la gare, 64330 Garlin</p>
+                    <p>E-mail : contact@zino-tech.fr</p>
+                    <p>Numéro de SIRET : 81083392000010</p>
+                    <p>Responsable de publication : [Vos informations]</p>
                 </div>
-                <p class="contact-text"><strong>Attention:</strong> Vous souhaitez contacter un praticien para-médical ?</p>
-                <p class="contact-text"><strong>Contactez-le directement.</strong></p>
             </div>
-            <Map />
-            <div style="height: 15vh"></div>
+
+            <div class="rdv-tuto-sub-title" style="margin-top: 30px;">Hébergeur</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p style="margin-bottom: 10px;"><strong>Le site est hébergé par :</strong></p>
+                    <p>Nom de l'hébergeur : [Vos informations]</p>
+                    <p>Adresse de l'hébergeur : [Vos informations]</p>
+                    <p>Téléphone : [Vos informations]</p>
+                    <p>Site Internet : [Vos informations]</p>
+                </div>
+            </div>
+
+            <div class="rdv-tuto-sub-title" style="margin-top: 30px;">Propriété intellectuelle</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p>L’ensemble des éléments présents sur ce site (textes, images, logos, vidéos, etc.) est protégé par les lois en vigueur sur la propriété intellectuelle. 
+                        Toute reproduction, représentation ou distribution, en tout ou partie, des contenus du site est strictement interdite sans l’autorisation préalable de [Vos informations].</p>
+                </div>
+            </div>
+
+            <div class="rdv-tuto-sub-title" style="margin-top: 30px;">Protection des données personnelles</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), les données personnelles collectées sur ce site sont utilisées uniquement dans le cadre défini (contact, demande d'informations, etc.).</p>
+                    <p>Vous disposez d’un droit d’accès, de rectification, et de suppression de vos données. Pour exercer ce droit, veuillez contacter [Vos informations].</p>
+                </div>
+            </div>
+
+            <div class="rdv-tuto-sub-title" style="margin-top: 30px;">Cookies</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p>Le site utilise des cookies afin d’améliorer l’expérience utilisateur et d’analyser le trafic. Vous pouvez paramétrer ou refuser les cookies via votre navigateur.</p>
+                </div>
+            </div>
+
+            <div class="rdv-tuto-sub-title" style="margin-top: 30px;">Responsabilité</div>
+            <div class="rdv-tuto-text" style="margin-top: 30px;">
+                <div class="tuto-text">
+                    <p>[Vos informations] s’efforce d’assurer la mise à jour régulière des informations présentes sur ce site. Toutefois, [Vos informations] ne saurait être tenu responsable en cas d’erreur ou d’omission.</p>
+                </div>
+            </div>
+            
+            <div style="height: 10vh"></div>
         </div>
         <div class="footer-text">
             <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau - <button on:click={() => goto("/mentions-legales")} class="rgpd-button" style="margin-top: 1vh; margin-bottom: 10px;">Mentions légales</button></p>

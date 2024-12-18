@@ -436,6 +436,13 @@ body {
   width: 70vw;
 }
 
+.rgpd-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
 @keyframes burgerMenuButtonAnimation {
   0% {
     transform: translateX(100%);

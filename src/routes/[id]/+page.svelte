@@ -133,7 +133,7 @@
             <div style="height: 10vh"></div>
         </div>        
         <div class="footer-text">
-            <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau</p>
+            <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau - <button on:click={() => goto("/mentions-legales")} class="rgpd-button" style="margin-top: 1vh; margin-bottom: 10px;">Mentions légales</button></p>
             <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
         </div>
     </body>
