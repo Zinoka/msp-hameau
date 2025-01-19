@@ -33,19 +33,18 @@
 <div class="navbar">
     <div class="title">Maison de Santé Pluriprofessionnelle</div>
     <div class="right-buttons">
-        <a href="/" class="navbar-button" on:click={() => goTo("/")}>Accueil</a
+        <a href="/" class="navbar-button">Accueil</a
         >
-        <a href="/"
-            class="navbar-button"
-            on:click={() => scrollToDiv("/", "practitioners")}>Les Praticiens</a
+        <a href="/#practitioners"
+            class="navbar-button">Les Praticiens</a
         >
-        <a href="/" class="navbar-button" on:click={() => scrollToDiv("/", "actualités")}
+        <a href="/#actualités" class="navbar-button"
             >Actualités</a
         >
-        <a href="#top" class="navbar-button" on:click={() => goTo("/informations")}
+        <a href="/informations" class="navbar-button"
             >Informations</a
         >
-        <a href="#top" class="navbar-button" on:click={() => goTo("/rendez-vous")}
+        <a href="/rendez-vous" class="navbar-button"
             >Rendez-vous</a
         >
         {#if $authUser}
@@ -92,22 +91,20 @@
 </div>
 {#if isburgerMenuOpen}
     <div class="burger-menu-panel">
-        <a href="#top" class="burger-menu-button" on:click={() => goTo("/")}
+        <a href="/" class="burger-menu-button"
             >Accueil</a
         >
-        <a href="#top"
+        <a href="/#practitioners"
             class="burger-menu-button"
-            on:click={() => scrollToDiv("/", "practitioners")}>Les Praticiens</a
+           >Les Praticiens</a
         >
-        <a href="#top"
+        <a href="/#actualités"
             class="burger-menu-button"
-            on:click={() => scrollToDiv("/", "actualités")}>Actualités</a
+            >Actualités</a
         >
-        <a href="#top"
-            class="burger-menu-button"
-            on:click={() => goTo("/informations")}>Informations</a
-        >
-        <a href="#top" class="burger-menu-button" on:click={() => goTo("/rendez-vous")}
+        <a href="/informations" class="burger-menu-button"
+        >Informations</a>
+        <a href="/rendez-vous" class="burger-menu-button"
             >Rendez-vous</a
         >
         {#if $authUser}
@@ -122,22 +119,22 @@
     </div>
 {:else if !isburgerMenuOpen && !init}
     <div class="burger-menu-panel-closing">
-        <a href="#top" class="burger-menu-button" on:click={() => goTo("/")}
+        <a href="/" class="burger-menu-button"
             >Accueil</a
         >
-        <a href="#top"
+        <a href="/#practitioners"
             class="burger-menu-button"
-            on:click={() => scrollToDiv("/", "practitioners")}>Les Praticiens</a
+            >Les Praticiens</a
         >
-        <a href="#top"
+        <a href="/#actualités"
             class="burger-menu-button"
-            on:click={() => scrollToDiv("/", "actualités")}>Actualités</a
+            >Actualités</a
         >
-        <a href="#top"
+        <a href="/informations"
             class="burger-menu-button"
-            on:click={() => goTo("/informations")}>Informations</a
+            >Informations</a
         >
-        <a href="#top" class="burger-menu-button" on:click={() => goTo("/rendez-vous")}
+        <a href="/rendez-vous" class="burger-menu-button"
             >Rendez-vous</a
         >
         {#if $authUser}
