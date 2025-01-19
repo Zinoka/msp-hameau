@@ -1,7 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
     import type { PageServerData } from "./$types"
-    import { authHandlers, userStore } from "$lib/stores/authStore";
 
 	export let data: PageServerData
 
@@ -13,22 +12,6 @@
             isburgerMenuOpen = false;
             goto(url);
         }, 0);
-    }
-
-    function openExternalLink(url: string) {
-        setTimeout(() => {
-            window.open(url, '_blank');
-        }, 0);
-    }
-
-    function burgerToggle() {
-        init = false;
-        isburgerMenuOpen = !isburgerMenuOpen;
-    }
-
-    function scrollToDiv(id: string) {
-        const element = document.getElementById(id);
-        element?.scrollIntoView({ behavior: 'smooth' });
     }
 
     function cutText(text: string) {
@@ -47,20 +30,13 @@
         const options: any = { day: 'numeric', month: 'long', year: 'numeric' };
         return new Intl.DateTimeFormat('fr-FR', options).format(dateObj);
     }
-
-    $: authUser = userStore
 </script>
 
 <html lang="fr">
     <head>
         <style>html{visibility: hidden;opacity:0;}</style>
         <title>MSP | Accueil</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
