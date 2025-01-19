@@ -27,11 +27,11 @@
                 <img class="doctor-image" src="images/JonathanBarberet.jpg" alt="Jonathan Barberet"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>Du lundi au vendredi de 9h00 à 19h00</li>
+                        <li>Du lundi au vendredi de 9h00 à 19h00.</li>
                     </ul>
                 </div>
-                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
-                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58.</a>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau.</div>
             </div>
 
 
@@ -40,12 +40,12 @@
                 <img class="doctor-image" src="images/EmilieCavero.jpg" alt="Émilie Cavero"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>Du lundi au jeudi de 8h30 à 18h00</li>
-                        <li>Vendredi de 8h30 à 14h00</li>
+                        <li>Du lundi au jeudi de 8h30 à 18h00.</li>
+                        <li>Vendredi de 8h30 à 14h00.</li>
                     </ul>
                 </div>
-                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
-                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58.</a>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau.</div>
             </div>
 
 
@@ -54,11 +54,11 @@
                 <img class="doctor-image" src="images/VirginieLeleu.jpg" alt="Virginie Leleu"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>Du lundi au vendredi de 9h00 à 19h00</li>
+                        <li>Du lundi au vendredi de 9h00 à 19h00.</li>
                     </ul>
                 </div>
-                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58</a>
-                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau</div>
+                <a class="doctor-phone" href="tel:0559274258" style="color: white;">Téléphone : 05 59 27 42 58.</a>
+                <div class="doctor-address" style="color: white;">Adresse : 125 Boulevard de la Paix, 64000 Pau.</div>
             </div>
             <div style="height: 10vh"></div>
         </div>

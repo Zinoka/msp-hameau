@@ -35,12 +35,12 @@
                 <img class="doctor-image" style="margin-left: 70%; transform: translateX(-70%);" src="images/LaurentCouret.png" alt="Laurent Couret"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>Du lundi au vendredi de 8h30 à 20h00</li>
-                        <li>Samedi de 8h30 à 19h00</li>
+                        <li>Du lundi au vendredi de 8h30 à 20h00.</li>
+                        <li>Samedi de 8h30 à 19h00.</li>
                     </ul>
                 </div>
-                <a class="doctor-phone" href="tel:0559026647" style="color: white;">Téléphone : 05 59 02 66 47</a>
-                <div class="doctor-address" style="color: white;">Adresse : 155 Boulevard de la paix, 64000 Pau</div>
+                <a class="doctor-phone" href="tel:0559026647" style="color: white;">Téléphone : 05 59 02 66 47.</a>
+                <div class="doctor-address" style="color: white;">Adresse : 155 Boulevard de la paix, 64000 Pau.</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://pharmacie-de-la-paix.aprium-pharmacie.fr")}>Site web</button>
             </div>
 
@@ -51,12 +51,12 @@
                 <img class="doctor-image" src="images/SophieMarechal.jpg" alt="Sophie Maréchal"/>
                 <div class="doctor-names" style="color: white;">
                     <ul>
-                        <li>Du lundi au vendredi de 8h30 à 12h30 et de 14h00 à 19h30</li>
-                        <li>Samedi de 8h30 à 12h30</li>
+                        <li>Du lundi au vendredi de 8h30 à 12h30 et de 14h00 à 19h30.</li>
+                        <li>Samedi de 8h30 à 12h30.</li>
                     </ul>
                 </div>
-                <a class="doctor-phone" href="tel:0559026894" style="color: white;">Téléphone : 05 59 02 68 94</a>
-                <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau</div>
+                <a class="doctor-phone" href="tel:0559026894" style="color: white;">Téléphone : 05 59 02 68 94.</a>
+                <div class="doctor-address" style="color: white;">Adresse : 38 rue Berlioz, 64000 Pau.</div>
                 <button class="doctor-rdv" style="color: #325592;" on:click={() => openExternalLink("https://pharmacieberlioz-pau.pharmavie.fr")}>Site web</button>
             </div>
             <div style="height: 10vh"></div>

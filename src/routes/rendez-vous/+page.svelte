@@ -45,17 +45,17 @@
                         <a href="tel:0559840002"
                             ><strong>05 59 84 00 02</strong></a
                         > pour les Dr Isabelle Ader Casedevant, Dr Fanny Le Guen,
-                        Dr Laure Elise Martin
+                        Dr Laure Elise Martin.
                     </p>
                     <p style="margin-top: 20px;">
                         Au <a href="tel:0559841227"
                             ><strong>05 59 84 12 27</strong></a
-                        > pour le Dr Pierre Casedevant
+                        > pour le Dr Pierre Casedevant.
                     </p>
                     <p style="margin-top: 20px;">
                         Au <a href="tel:0559026397"
                             ><strong>05 59 02 63 97</strong></a
-                        > pour le Dr Julie Canton Arino
+                        > pour le Dr Julie Canton Arino.
                     </p>
                     <p style="margin-top: 20px;">
                         Une permanence téléphonique pour les urgences des
@@ -64,7 +64,7 @@
                         vendredi et de <strong>8h00 à 12h00</strong> le samedi (pas
                         de prise de rendez-vous non urgent)
                     </p>
-                    <p>Vous pouvez aussi prendre rendez-vous sur Easydoct</p>
+                    <p>Vous pouvez aussi prendre rendez-vous sur Easydoct.</p>
                     <button
                         class="tuto-button"
                         on:click={() =>
