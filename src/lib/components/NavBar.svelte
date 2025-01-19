@@ -48,17 +48,17 @@
             >Rendez-vous</a
         >
         {#if $authUser}
-            <a href="#top"
+            <a href="/protected/ads"
                 class="navbar-button"
-                on:click={() => goTo("/protected/ads")}>Admin</a
+                >Admin</a
             >
-            <a href="#top" class="navbar-button" on:click={authHandlers.logOut}
+            <a href="/" class="navbar-button" on:click={authHandlers.logOut}
                 >Déconnexion</a
             >
         {/if}
     </div>
     {#if isburgerMenuOpen}
-        <a href="#top"
+        <button
             class="burger-menu"
             id="burgerMenu"
             on:click={() => burgerToggle()}
@@ -66,9 +66,9 @@
             <div class="burger-menu-first-line-to-open"></div>
             <div class="burger-menu-second-line-to-open"></div>
             <div class="burger-menu-third-line-to-open"></div>
-        </a>
+        </button>
     {:else if !isburgerMenuOpen && init}
-        <a href="#top"
+        <button
             class="burger-menu"
             id="burgerMenu"
             on:click={() => burgerToggle()}
@@ -76,9 +76,9 @@
             <div class="burger-menu-first-line"></div>
             <div class="burger-menu-second-line"></div>
             <div class="burger-menu-third-line"></div>
-        </a>
+        </button>
     {:else if !isburgerMenuOpen && !init}
-        <a href="#top"
+        <button
             class="burger-menu"
             id="burgerMenu"
             on:click={() => burgerToggle()}
@@ -86,7 +86,7 @@
             <div class="burger-menu-first-line-to-close"></div>
             <div class="burger-menu-second-line-to-close"></div>
             <div class="burger-menu-third-line-to-close"></div>
-        </a>
+        </button>
     {/if}
 </div>
 {#if isburgerMenuOpen}
@@ -108,11 +108,11 @@
             >Rendez-vous</a
         >
         {#if $authUser}
-            <a href="#top"
+            <a href="/protected/ads"
                 class="burger-menu-button"
-                on:click={() => goTo("/protected/ads")}>Admin</a
+                >Admin</a
             >
-            <a href="#top" class="burger-menu-button" on:click={authHandlers.logOut}
+            <a href="/" class="burger-menu-button" on:click={authHandlers.logOut}
                 >Déconnexion</a
             >
         {/if}
@@ -138,11 +138,11 @@
             >Rendez-vous</a
         >
         {#if $authUser}
-            <a href="#top"
+            <a href="/protected/ads"
                 class="burger-menu-button"
-                on:click={() => goTo("/protected/ads")}>Admin</a
+                >Admin</a
             >
-            <a href="#top" class="burger-menu-button" on:click={authHandlers.logOut}
+            <a href="/" class="burger-menu-button" on:click={authHandlers.logOut}
                 >Déconnexion</a
             >
         {/if}
