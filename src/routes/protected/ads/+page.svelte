@@ -1,14 +1,11 @@
 <script lang="ts">
-    import { userStore, authHandlers } from "$lib/stores/authStore"
+    import { userStore } from "$lib/stores/authStore"
     import { goto } from '$app/navigation';
     import type { PageServerData } from "./$types"
     import { switchArticleStatus } from "$lib/stores/articleStore";
     import type { Article } from "$lib/entities/Article";
-    import { createArticle } from "$lib/stores/articleStore";
     
 	export let data: PageServerData
-
-    $: articleStatus = false;
 
     let isburgerMenuOpen = false;
     let init = true;
@@ -22,23 +19,6 @@
             isburgerMenuOpen = false;
             goto(url);
         }, 0);
-    }
-
-    function openExternalLink(url: string) {
-        setTimeout(() => {
-            window.open(url, '_blank');
-        }, 0);
-    }
-
-    function burgerToggle() {
-        init = false;
-        isburgerMenuOpen = !isburgerMenuOpen;
-    }
-
-    async function scrollToDiv() {
-        await goto("/");
-        const element = document.getElementById("practitioners");
-        element?.scrollIntoView({ behavior: 'smooth' });
     }
 
     function disableArticle(item: Article) {
@@ -67,15 +47,10 @@
     <head>
         <style>html{visibility: hidden;opacity:0;}</style>
         <title>MSP | Admin</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="/css/index.css">
         <link rel="preconnect" href="/css/contact.css">
         <link rel="preconnect" href="/css/annonce.css">
         <link rel="preconnect" href="/css/article.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="/css/contact.css">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="/css/annonce.css">

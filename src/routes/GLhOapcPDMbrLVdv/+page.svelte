@@ -5,7 +5,6 @@
     import { authHandlers } from "$lib/stores/authStore"
 
     let isburgerMenuOpen = false;
-    let init = true;
 
     let email: string
 	let password: string
@@ -18,16 +17,6 @@
             isburgerMenuOpen = false;
             goto(url);
         }, 0);
-    }
-
-    function burgerToggle() {
-        init = false;
-        isburgerMenuOpen = !isburgerMenuOpen;
-    }
-
-    function scrollToDiv(id: string) {
-        const element = document.getElementById(id);
-        element?.scrollIntoView({ behavior: 'smooth' });
     }
 
     const login = async () => {
@@ -54,13 +43,8 @@
     <head>
         <style>html{visibility: hidden;opacity:0;}</style>
         <title>MSP | Login</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="css/index.css">
         <link rel="preconnect" href="css/rdv.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/rdv.css">
 
