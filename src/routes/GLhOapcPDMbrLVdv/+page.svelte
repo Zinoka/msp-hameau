@@ -66,55 +66,6 @@
 
     </head>
     <body>
-        <div class="navbar">
-            <div class="title">Maison de Santé Pluriprofessionnelle</div>
-            <div class="right-buttons">
-                <button class="navbar-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="navbar-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
-                <button class="navbar-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
-                <button class="navbar-button" on:click={() => goTo("/informations")}>Informations</button>
-                
-                <button class="navbar-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-            </div>
-            {#if isburgerMenuOpen}
-                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                    <div class="burger-menu-first-line-to-open"></div>
-                    <div class="burger-menu-second-line-to-open"></div>
-                    <div class="burger-menu-third-line-to-open"></div>
-                </button>
-            {:else if !isburgerMenuOpen && init}
-                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                    <div class="burger-menu-first-line"></div>
-                    <div class="burger-menu-second-line"></div>
-                    <div class="burger-menu-third-line"></div>
-                </button>
-            {:else if !isburgerMenuOpen && !init}
-                <button class="burger-menu" id="burgerMenu" on:click={() => burgerToggle()}>
-                    <div class="burger-menu-first-line-to-close"></div>
-                    <div class="burger-menu-second-line-to-close"></div>
-                    <div class="burger-menu-third-line-to-close"></div>
-                </button>
-            {/if}
-        </div>
-        {#if isburgerMenuOpen}
-            <div class="burger-menu-panel">
-                <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
-                <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
-                
-                <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-            </div>
-        {:else if !isburgerMenuOpen && !init}
-            <div class="burger-menu-panel-closing">
-                <button class="burger-menu-button" on:click={() => goTo("/")}>Accueil</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("practitioners")}>Les Praticiens</button>
-                <button class="burger-menu-button" on:click={() => scrollToDiv("actualités")}>Actualités</button>
-                <button class="burger-menu-button" on:click={() => goTo("/informations")}>Informations</button>
-                
-                <button class="burger-menu-button" on:click={() => goTo("/rendez-vous")}>Rendez-vous</button>
-            </div>
-        {/if}
         <div class="login-container">
             <div class="login-form">
                 <h1 style="margin-bottom: 40px; text-align: center;">Connexion</h1>
@@ -131,7 +82,7 @@
             </div>
         </div>
         <div class="footer-text">
-            <p style="margin-top: 1vh; margin-bottom: 10px;">© 2024 Copyright Maison de Santé Pluriprofessionnelle du Hameau - <button on:click={() => goto("/mentions-legales")} class="rgpd-button" style="margin-top: 1vh; margin-bottom: 10px;">Mentions légales</button></p>
+            <p style="margin-top: 1vh; margin-bottom: 10px;">© 2025 Copyright Maison de Santé Pluriprofessionnelle du Hameau - <button on:click={() => goto("/mentions-legales")} class="rgpd-button" style="margin-top: 1vh; margin-bottom: 10px;">Mentions légales</button></p>
             <p style="margin-bottom: 1vh;">Créé par Zino-Tech</p>
         </div>
     </body>

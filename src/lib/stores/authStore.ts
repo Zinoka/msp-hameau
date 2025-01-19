@@ -14,7 +14,6 @@ export const authHandlers = {
   logOut: async (): Promise<void> => {
     try {
       userStore.set(null);
-      await goto("/");
     } catch (err) {
       throw new Error(
         `Erreur lors du nettoyage du store de l'utilisateur, ${err}`

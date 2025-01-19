@@ -12,14 +12,14 @@ class TypeOrm {
     if (!TypeOrm.instance) {
       TypeOrm.instance = new DataSource({
         type: "mysql",
-        host: "localhost",
+        host: env_variables.parsed.DB_HOST || "localhost",
         port: 3306,
         username: env_variables.parsed.DB_USERNAME,
         password: env_variables.parsed.DB_PASSWORD,
         database: "msp_hameau",
         synchronize: false,
         entities: [Article, User],
-        logging: false,
+        logging: true
       })
         .initialize()
         .then((fulfilled) => {
