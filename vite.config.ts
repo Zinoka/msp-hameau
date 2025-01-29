@@ -6,4 +6,8 @@ export default defineConfig({
   ssr: {
     external: ["reflect-metadata"],
   },
+  server: {
+    hmr: false,
+    allowedHosts: ["www.msp-du-hameau.fr"],
+  },
 });
