@@ -63,9 +63,9 @@
             id="burgerMenu"
             on:click={() => burgerToggle()}
         >
-            <div class="burger-menu-first-line-to-open"></div>
-            <div class="burger-menu-second-line-to-open"></div>
-            <div class="burger-menu-third-line-to-open"></div>
+            <span class="burger-menu-first-line-to-open"></span>
+            <span class="burger-menu-second-line-to-open"></span>
+            <span class="burger-menu-third-line-to-open"></span>
         </button>
     {:else if !isburgerMenuOpen && init}
         <button
@@ -73,9 +73,9 @@
             id="burgerMenu"
             on:click={() => burgerToggle()}
         >
-            <div class="burger-menu-first-line"></div>
-            <div class="burger-menu-second-line"></div>
-            <div class="burger-menu-third-line"></div>
+            <span class="burger-menu-first-line"></span>
+            <span class="burger-menu-second-line"></span>
+            <span class="burger-menu-third-line"></span>
         </button>
     {:else if !isburgerMenuOpen && !init}
         <button
@@ -83,9 +83,9 @@
             id="burgerMenu"
             on:click={() => burgerToggle()}
         >
-            <div class="burger-menu-first-line-to-close"></div>
-            <div class="burger-menu-second-line-to-close"></div>
-            <div class="burger-menu-third-line-to-close"></div>
+            <span class="burger-menu-first-line-to-close"></span>
+            <span class="burger-menu-second-line-to-close"></span>
+            <span class="burger-menu-third-line-to-close"></span>
         </button>
     {/if}
 </div>
