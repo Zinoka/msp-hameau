@@ -10,4 +10,7 @@ export default defineConfig({
     hmr: false,
     allowedHosts: ["www.msp-du-hameau.fr"],
   },
+  build: {
+    minify: "esbuild",
+  },
 });
