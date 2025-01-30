@@ -43,6 +43,7 @@
     $: authUser = userStore
 </script>
 
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <style>html{visibility: hidden;opacity:0;}</style>
