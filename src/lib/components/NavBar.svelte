@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" >
 </svelte:head>
 
 <div class="navbar">
