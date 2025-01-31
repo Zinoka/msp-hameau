@@ -27,6 +27,7 @@
 	}
 
 	const cookies = Cookies.get("cookie_preferences");
+	console.log("cookies", cookies);
 </script>
 
 <NavBar />
