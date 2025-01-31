@@ -21,13 +21,15 @@
 			) {
 				await goto("/");
 			}
+
+			const preferences = JSON.parse(
+				Cookies.get("cookie_preferences") || "{}",
+			);
+			console.log("pref", preferences);
 		});
 	} catch (err) {
 		throw new Error(`Erreur lors de l'affichage de la page "/"\n ${err}`);
 	}
-
-	const cookies = Cookies.get("cookie_preferences");
-	console.log("here", cookies);
 </script>
 
 <NavBar />
