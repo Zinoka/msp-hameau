@@ -7,6 +7,7 @@
 	import CookieBanner from "$lib/components/CookieBanner.svelte";
 	import CookieConsent from "$lib/components/CookieConsent.svelte";
 	import NavBar from "$lib/components/NavBar.svelte";
+	import Cookies from "js-cookie";
 
 	initializeStores();
 
@@ -24,6 +25,10 @@
 	} catch (err) {
 		throw new Error(`Erreur lors de l'affichage de la page "/"\n ${err}`);
 	}
+
+	const cookies = Cookies.get("cookie_preferences");
+
+	console.log("here", cookies);
 </script>
 
 <NavBar />
