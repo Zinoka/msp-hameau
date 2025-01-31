@@ -11,11 +11,11 @@
 
 	initializeStores();
 
+	let preferences = {};
+
 	try {
 		onMount(async () => {
-			const preferences = JSON.parse(
-				Cookies.get("cookie_preferences") || "{}",
-			);
+			preferences = JSON.parse(Cookies.get("cookie_preferences") || "{}");
 			console.log("pref", preferences);
 			const authUser: AuthUser | null | undefined = $userStore;
 			if (
@@ -32,5 +32,8 @@
 </script>
 
 <NavBar />
-<CookieBanner />
+
+{#if !preferences}
+	<CookieBanner />
+{/if}
 <slot />
