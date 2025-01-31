@@ -29,21 +29,11 @@
   <link rel="stylesheet" href="css/rdv.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    import { onMount } from "svelte";
-    import Cookies from "js-cookie";
-
-    onMount(() => {
-      const preferences = JSON.parse(Cookies.get("cookie_preferences") || "{}");
-      console.log("pref", preferences);
-    });
-  </script>
   %sveltekit.head%
 </head>
 
 <body data-sveltekit-preload-data="hover">
   <div style="display: contents">%sveltekit.body%</div>
-  <CookieBanner />
 </body>
 
 </html>
