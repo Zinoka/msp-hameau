@@ -27,10 +27,12 @@
 	}
 
 	const cookies = Cookies.get("cookie_preferences");
-
-	console.log("here", cookies);
 </script>
 
 <NavBar />
-<CookieBanner />
+
+{#if !cookies}
+	<CookieBanner />
+{/if}
+
 <slot />
