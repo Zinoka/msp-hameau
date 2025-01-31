@@ -20,7 +20,7 @@
 
 			preferences = JSON.parse(cookieRaw || "{}");
 			console.log("Préférences après parsing :", preferences);
-			
+
 			const authUser: AuthUser | null | undefined = $userStore;
 			if (
 				(!authUser && $page.url.pathname === "/protected") ||
@@ -36,8 +36,6 @@
 </script>
 
 <NavBar />
+<CookieBanner />
 
-{#if !preferences}
-	<CookieBanner />
-{/if}
 <slot />
