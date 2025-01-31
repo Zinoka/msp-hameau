@@ -15,8 +15,12 @@
 
 	try {
 		onMount(async () => {
-			preferences = JSON.parse(Cookies.get("cookie_preferences") || "{}");
-			console.log("pref", preferences);
+			const cookieRaw = Cookies.get("cookie_preferences");
+			console.log("Cookie récupéré :", cookieRaw);
+
+			preferences = JSON.parse(cookieRaw || "{}");
+			console.log("Préférences après parsing :", preferences);
+			
 			const authUser: AuthUser | null | undefined = $userStore;
 			if (
 				(!authUser && $page.url.pathname === "/protected") ||
