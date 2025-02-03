@@ -5,6 +5,7 @@ import { localStorageStore } from "@skeletonlabs/skeleton";
 export interface AuthUser {
   uid: string | undefined;
   email: string | undefined;
+  accessToken: string | undefined;
 }
 
 export const userStore: Writable<AuthUser | undefined | null> =
@@ -29,7 +30,6 @@ export const authHandlers = {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-sveltekit-action": "true",
         },
         body: JSON.stringify({
           email: email,
@@ -44,6 +44,7 @@ export const authHandlers = {
           const userCredentials: AuthUser = {
             uid: user.id,
             email: user.email,
+            accessToken: user.accessToken,
           };
           return userCredentials;
         } else {

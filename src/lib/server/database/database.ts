@@ -21,7 +21,7 @@ class TypeOrm {
           database: "msp_hameau",
           synchronize: false,
           entities: [Article, User],
-          logging: true
+          logging: false
         })
           .initialize()
           .then((fulfilled) => {

@@ -29,13 +29,15 @@
                 $userStore = {
                     uid: userCredential?.uid,
                     email: userCredential?.email,
+                    accessToken: userCredential?.accessToken,
                 };
                 await goto("/protected/ads");
             } else {
                 success = false;
             }
         } catch (err) {
-            throw new Error(`Erreur lors de la connexion ${err}`);
+            console.error(`Erreur lors de la connexion : ${err}`);
+            success = false;
         }
     };
 </script>
@@ -50,6 +52,7 @@
             <h1 style="margin-bottom: 40px; text-align: center;">Connexion</h1>
             <form
                 class="login-form"
+                method="post"
                 action="#"
                 on:submit|preventDefault={login}
             >

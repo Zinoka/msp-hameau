@@ -11,6 +11,9 @@ export class User extends BaseEntity {
 
   @Column({ type: "varchar" })
   password: string;
+
+  @Column({ type: "varchar" })
+  accessToken: string;
 }
 
 export const getUserByEmail = async (body: any) => {
@@ -21,3 +24,11 @@ export const getUserByEmail = async (body: any) => {
 
   return structuredClone(user);
 };
+
+export const getUserByAccessToken = async (accessToken: string) => {
+  const user = await db.getRepository(User).findOneBy({
+    accessToken: accessToken,
+  });
+
+  return user ? true : false;
+}
