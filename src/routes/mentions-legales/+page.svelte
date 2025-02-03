@@ -11,9 +11,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Mentions Légales</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="rdv-tuto">

@@ -11,9 +11,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Horaires</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="rdv-tuto">

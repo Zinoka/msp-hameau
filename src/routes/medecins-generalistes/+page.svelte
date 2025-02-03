@@ -17,9 +17,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Médecins Généralistes</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="doctors-container">

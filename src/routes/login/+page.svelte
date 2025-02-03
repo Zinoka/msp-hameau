@@ -42,9 +42,9 @@
     };
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Login</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="login-container">

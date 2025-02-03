@@ -11,9 +11,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Infirmière Asalée</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="doctors-container">

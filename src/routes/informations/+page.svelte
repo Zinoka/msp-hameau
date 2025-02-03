@@ -18,9 +18,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Informations</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="contact-container">

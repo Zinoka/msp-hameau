@@ -17,9 +17,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Rendez-vous</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="rdv-tuto">

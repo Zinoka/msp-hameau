@@ -11,9 +11,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Infirmiers Libéraux</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="doctors-container">

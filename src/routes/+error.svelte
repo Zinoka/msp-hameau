@@ -22,9 +22,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Erreur</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="error-container">

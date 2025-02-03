@@ -30,9 +30,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Article {data.article ? data.article.id : -1}</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="rdv-tuto">

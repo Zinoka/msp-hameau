@@ -31,9 +31,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Accueil</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="slogan-container">

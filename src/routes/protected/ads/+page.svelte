@@ -43,9 +43,9 @@
   $: authUser = userStore;
 </script>
 
-<head>
+<svelte:head>
   <title>MSP | Admin</title>
-</head>
+</svelte:head>
 
 <body>
   <div class="contact-container">

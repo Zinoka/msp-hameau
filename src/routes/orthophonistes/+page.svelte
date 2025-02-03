@@ -17,9 +17,9 @@
     }
 </script>
 
-<head>
+<svelte:head>
     <title>MSP | Orthophonistes</title>
-</head>
+</svelte:head>
 
 <body>
     <div class="doctors-container">
